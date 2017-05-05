@@ -1,13 +1,12 @@
 # coding: utf-8
 
-from flask import Blueprint
+from flask import Blueprint, jsonify
 from flask_apispec import marshal_with, use_kwargs
 from .serializers import article_schema, articles_schema
-from flask_jwt import jwt_required, current_identity, _jwt_required
+from flask_jwt import jwt_required, current_identity
 from .models import Article, Tags
 from sqlalchemy.exc import IntegrityError
 from conduit.user.models import User
-from conduit.profile.models import UserProfile
 from conduit.exceptions import InvalidUsage, UNKONW_ERROR, ARTICLE_NOT_FOUND
 from marshmallow import fields
 from conduit.utils import jwt_optional
@@ -49,7 +48,6 @@ def make_article(body, title, description, tagList=None):
             if not mtag:
                 mtag = Tags(tag)
                 mtag.save()
-                # db.session.rollback()
             article.add_tag(mtag)
     article.save()
     return article
@@ -106,3 +104,12 @@ def favorite_an_article(slug):
 def articles_feed(limit=20, offset=0):
     return current_identity.profile.follows.join(Article).order_by(Article.createdAt.desc())\
                                            .offset(offset).limit(limit).all()
+
+
+######
+# Tags
+######
+
+@blueprint.route('/api/tags', methods=('GET',))
+def get_tags():
+    return jsonify({'tags': [tag.tagname for tag in Tags.query.all()]})

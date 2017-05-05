@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """The app module, containing the app factory function."""
-from flask import Flask, render_template
+from flask import Flask
 from conduit.extensions import bcrypt, cache, db, migrate, jwt
 
 from conduit import commands, user, profile, articles

@@ -1,8 +1,6 @@
 # coding: utf-8
 
 from flask import url_for
-from werkzeug.exceptions import NotFound
-from .factories import UserFactory
 from conduit.exceptions import USER_NOT_FOUND
 
 

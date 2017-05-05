@@ -3,6 +3,7 @@
 from flask import url_for
 from conduit.exceptions import USER_ALREADY_REGISTERED
 
+
 def _register_user(testapp, **kwargs):
     return testapp.post_json(url_for('user.register_user'), {
           "user": {

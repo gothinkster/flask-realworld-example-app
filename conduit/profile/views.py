@@ -2,10 +2,8 @@
 
 from flask import Blueprint
 from flask_apispec import marshal_with
-from .models import UserProfile
 from flask_jwt import current_identity, jwt_required
 from conduit.user.models import User
-from conduit.user.serializers import user_schema
 from .serializers import profile_schema
 from conduit.exceptions import InvalidUsage, USER_NOT_FOUND
 

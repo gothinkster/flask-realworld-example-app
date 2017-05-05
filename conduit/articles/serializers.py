@@ -1,4 +1,4 @@
-from marshmallow import Schema, fields, pre_load, post_dump, pre_dump
+from marshmallow import Schema, fields, pre_load, post_dump
 from conduit.profile.serializers import ProfileSchema
 
 

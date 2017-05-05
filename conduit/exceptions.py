@@ -23,3 +23,5 @@ def TEMPLATE(data, code=500):
 
 USER_NOT_FOUND = TEMPLATE(['User not found'], code=404)
 USER_ALREADY_REGISTERED = TEMPLATE(['User already registered'], code=422)
+UNKONW_ERROR = TEMPLATE([], code=500)
+ARTICLE_NOT_FOUND = TEMPLATE(['Article not found'], code=404)

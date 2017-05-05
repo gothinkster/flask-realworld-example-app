@@ -52,7 +52,10 @@ def db(app):
 @pytest.fixture
 def user(db):
     """A user for the tests."""
-    user = UserFactory(password='myprecious')
-    UserProfile(user).save()
-    db.session.commit()
-    return user
+    class user():
+        def get(self):
+            muser = UserFactory(password='myprecious')
+            UserProfile(muser).save()
+            db.session.commit()
+            return muser
+    return user()

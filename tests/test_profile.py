@@ -29,6 +29,7 @@ class TestProfile:
         assert resp.json == USER_NOT_FOUND['message']
 
     def test_follow_user(self, testapp, user):
+        user = user.get()
         resp = _register_user(testapp)
         token = resp.json['user']['token']
         resp = testapp.post(url_for('profiles.follow_user', username=user.username), headers={
@@ -37,6 +38,7 @@ class TestProfile:
         resp.json['profile']['following'] is True
 
     def test_unfollow_user(self, testapp, user):
+        user = user.get()
         resp = _register_user(testapp)
         token = resp.json['user']['token']
         resp = testapp.delete(url_for('profiles.unfollow_user', username=user.username), headers={

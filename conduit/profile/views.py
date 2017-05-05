@@ -25,8 +25,6 @@ def get_profile(username):
     # if logged in check if user is following.
     if current_identity:
         userprofile.following = current_identity.profile.is_following(user.profile)
-    for attr, value in user_schema.dump(user).data['user'].items():
-        setattr(userprofile, attr, value)
     return userprofile
 
 
@@ -38,8 +36,6 @@ def follow_user(username):
     profile2 = current_identity.profile
     profile2.follow(profile1)
     profile1.following = profile2.is_following(profile1)
-    for attr, value in user_schema.dump(profile1.user).data['user'].items():
-        setattr(profile1, attr, value)
     return profile1
 
 
@@ -51,6 +47,4 @@ def unfollow_user(username):
     profile2 = current_identity.profile
     profile2.unfollow(profile1)
     profile1.following = profile2.is_following(profile1)
-    for attr, value in user_schema.dump(profile1.user).data['user'].items():
-        setattr(profile1, attr, value)
     return profile1

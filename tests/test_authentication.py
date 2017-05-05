@@ -43,7 +43,7 @@ class TestAuthenticate:
     def test_register_already_registered_user(self, testapp):
         _register_user(testapp)
         resp = _register_user(testapp, expect_errors=True)
-        assert resp.status_int == 500
+        assert resp.status_int == 422
         assert resp.json == USER_ALREADY_REGISTERED['message']
 
     def test_update_user(self, testapp):

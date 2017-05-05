@@ -3,7 +3,7 @@
 from flask import Flask, render_template
 from conduit.extensions import bcrypt, cache, db, migrate, jwt
 
-from conduit import commands, user, profile
+from conduit import commands, user, profile, articles
 from conduit.assets import assets
 from conduit.settings import ProdConfig
 from conduit.exceptions import InvalidUsage
@@ -39,6 +39,7 @@ def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(user.views.blueprint)
     app.register_blueprint(profile.views.blueprint)
+    app.register_blueprint(articles.views.blueprint)
     return None
 
 
@@ -57,7 +58,9 @@ def register_shellcontext(app):
         return {
             'db': db,
             'User': user.models.User,
-            'UserProfile': profile.models.UserProfile
+            'UserProfile': profile.models.UserProfile,
+            'Article': articles.models.Article,
+            'Tag': articles.models.Tags,
         }
 
     app.shell_context_processor(shell_context)

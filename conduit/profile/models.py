@@ -36,6 +36,22 @@ class UserProfile(Model, SurrogatePK):
 
     def unfollow(self, profile):
         if self is not profile and self.is_following(profile):
-            self.follows.append(profile)
+            self.follows.remove(profile)
             return True
         return False
+
+    @property
+    def username(self):
+        return self.user.username
+
+    @property
+    def bio(self):
+        return self.user.bio
+
+    @property
+    def image(self):
+        return self.user.image
+
+    @property
+    def email(self):
+        return self.user.email

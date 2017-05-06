@@ -6,12 +6,14 @@ from flask_caching import Cache
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from flask_jwt import JWT
+from flask_cors import CORS
 
 
 bcrypt = Bcrypt()
 db = SQLAlchemy()
 migrate = Migrate()
 cache = Cache()
+cors = CORS()
 
 from conduit.utils import authenticate, jwt_identity # noqa
 

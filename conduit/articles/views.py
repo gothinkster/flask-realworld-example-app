@@ -8,14 +8,16 @@ from flask_jwt import jwt_required, current_identity
 from .models import Article, Tags, Comment
 from sqlalchemy.exc import IntegrityError
 from conduit.user.models import User
-from conduit.exceptions import (InvalidUsage, UNKONW_ERROR, ARTICLE_NOT_FOUND,
-                                COMMENT_NOT_OWNED)
+from conduit.exceptions import (InvalidUsage, UNKONW_ERROR, ARTICLE_NOT_FOUND)
 from marshmallow import fields
 from conduit.utils import jwt_optional
 import datetime as dt
+from conduit.database import db
+from conduit.extensions import cors
 
 
 blueprint = Blueprint('articles', __name__)
+cors.init_app(blueprint)
 
 
 ##########
@@ -47,6 +49,7 @@ def make_article(body, title, description, tagList=None):
         article = Article(title=title, description=description, body=body,
                           author=current_identity.profile)
     except IntegrityError as e:
+        db.session.rollback()
         raise InvalidUsage(**UNKONW_ERROR)
     if tagList is not None:
         for tag in tagList:
@@ -99,6 +102,19 @@ def favorite_an_article(slug):
     if not article:
         raise InvalidUsage(**ARTICLE_NOT_FOUND)
     article.favourite(profile)
+    article.save()
+    return article
+
+
+@blueprint.route('/api/articles/<slug>/favorite', methods=('DELETE',))
+@jwt_required()
+@marshal_with(article_schema)
+def unfavorite_an_article(slug):
+    profile = current_identity.profile
+    article = Article.query.filter_by(slug=slug).first()
+    if not article:
+        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+    article.unfavourite(profile)
     article.save()
     return article
 

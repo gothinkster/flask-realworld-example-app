@@ -15,7 +15,8 @@ class UserSchema(Schema):
 
     @pre_load
     def make_user(self, data):
-        return data['user']
+        data = {key: value for key, value in data['user'].items() if value != ''}
+        return data
 
     @post_dump
     def dump_user(self, data):

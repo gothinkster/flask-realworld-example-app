@@ -64,14 +64,22 @@ class CommentSchema(Schema):
     def dump_comment(self, data):
         return {'comment': data}
 
+    class Meta:
+        strict = True
+
 
 class CommentsSchema(CommentSchema):
+
+    @post_dump
+    def dump_comment(self, data):
+        return data
+
     @post_dump(pass_many=True)
-    def make_comments(self, data, many):
+    def make_comment(self, data, many):
         return {'comments': data}
 
 
 article_schema = ArticleSchema()
 articles_schema = ArticleSchemas(many=True)
 comment_schema = CommentSchema()
-comments_schema = CommentSchema(many=True)
+comments_schema = CommentsSchema(many=True)

@@ -45,3 +45,4 @@ docs/_build
 # Virtualenvs
 env/
 dev.db
+.cache/v/cache

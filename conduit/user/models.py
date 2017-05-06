@@ -4,6 +4,7 @@ import datetime as dt
 
 from conduit.database import Column, Model, SurrogatePK, db
 from conduit.extensions import bcrypt
+from flask_jwt import _default_jwt_encode_handler
 
 
 class User(SurrogatePK, Model):
@@ -31,6 +32,10 @@ class User(SurrogatePK, Model):
     def check_password(self, value):
         """Check password."""
         return bcrypt.check_password_hash(self.password, value)
+
+    @property
+    def token(self):
+        return _default_jwt_encode_handler(self).decode('utf-8')
 
     def __repr__(self):
         """Represent instance as a unique string."""

@@ -23,11 +23,10 @@ environment variables ::
 
 Then run the following commands to bootstrap your environment ::
 
-    git clone https://github.com//conduit
-    cd conduit
+    git clone https://github.com/mohamed-aziz/realworld-flask.git
+    cd realworld-flask
     pip install -r requirements/dev.txt
-    bower install
-    flask run
+    flask run --with-threads
 
 You will see a pretty welcome screen.
 
@@ -37,7 +36,7 @@ database tables and perform the initial migration ::
     flask db init
     flask db migrate
     flask db upgrade
-    flask run
+    flask run --with-threads
 
 
 Deployment

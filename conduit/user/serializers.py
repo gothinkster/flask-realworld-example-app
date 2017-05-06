@@ -15,7 +15,11 @@ class UserSchema(Schema):
 
     @pre_load
     def make_user(self, data):
-        data = {key: value for key, value in data['user'].items() if value != ''}
+        data = data['user']
+        if data['email'] == '':
+            del data['email']
+        if data['image'] == '':
+            del data['image']
         return data
 
     @post_dump

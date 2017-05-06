@@ -30,6 +30,21 @@ class Tags(Model):
         return self.tagname
 
 
+class Comment(Model, SurrogatePK):
+    __tablename__ = 'comment'
+
+    id = db.Column(db.Integer, primary_key=True)
+    body = Column(db.Text)
+    createdAt = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+    updatedAt = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+    author_id = reference_col('userprofile', nullable=False)
+    author = relationship('UserProfile', backref=db.backref('comments'))
+    article_id = reference_col('article', nullable=False)
+
+    def __init__(self, article, author, body, **kwargs):
+        db.Model.__init__(self, author=author,  body=body, article=article, **kwargs)
+
+
 class Article(SurrogatePK, Model):
     __tablename__ = 'article'
 
@@ -50,6 +65,8 @@ class Article(SurrogatePK, Model):
 
     tagList = relationship(
         'Tags', secondary=tag_assoc, backref='articles')
+
+    comments = relationship('Comment', backref=db.backref('article'), lazy='dynamic')
 
     def __init__(self, author, title, body, description, slug=None, **kwargs):
         db.Model.__init__(self, author=author, title=title, description=description, body=body,
@@ -88,9 +105,7 @@ class Article(SurrogatePK, Model):
 
     @property
     def favorited(self):
-        print(current_identity)
         if current_identity:
             profile = current_identity.profile
-            print(self.query.join(Article.favoriters).filter(UserProfile.id == profile.id).count())
             return self.query.join(Article.favoriters).filter(UserProfile.id == profile.id).count() == 1
         return False

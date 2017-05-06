@@ -6,7 +6,8 @@ import pytest
 
 from conduit.user.models import User
 from conduit.profile.models import UserProfile
-from conduit.articles.models import Article, Tags
+from conduit.articles.models import Article, Tags, Comment
+
 
 from .factories import UserFactory
 
@@ -149,3 +150,32 @@ class TestArticles:
         assert article.add_tag(t1) is True
         assert article.remove_tag(t1) is True
         assert len(article.tagList) == 0
+
+
+@pytest.mark.usefixtures('db')
+class TestComment:
+
+    def test_make_comment(self, user):
+        user = user.get()
+        article = Article(user.profile, 'title', 'some body', description='some')
+        article.save()
+        comment = Comment(article, user.profile, 'some body')
+        comment.save()
+
+        assert comment.article is article
+        assert comment.author is user.profile
+
+    def test_make_comments(self, user):
+        user = user.get()
+        article = Article(user.profile, 'title', 'some body', description='some')
+        article.save()
+        comment = Comment(article, user.profile, 'some body')
+        comment1 = Comment(article, user.profile, 'some body2')
+        comment.save()
+        comment1.save()
+
+        assert comment.article is article
+        assert comment.author is user.profile
+        assert comment1.article is article
+        assert comment1.author is user.profile
+        assert len(article.comments.all()) == 2

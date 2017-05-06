@@ -2,18 +2,25 @@
 
 from flask import Blueprint, jsonify
 from flask_apispec import marshal_with, use_kwargs
-from .serializers import article_schema, articles_schema
+from .serializers import (article_schema, articles_schema, comment_schema,
+                          comments_schema)
 from flask_jwt import jwt_required, current_identity
-from .models import Article, Tags
+from .models import Article, Tags, Comment
 from sqlalchemy.exc import IntegrityError
 from conduit.user.models import User
-from conduit.exceptions import InvalidUsage, UNKONW_ERROR, ARTICLE_NOT_FOUND
+from conduit.exceptions import (InvalidUsage, UNKONW_ERROR, ARTICLE_NOT_FOUND,
+                                COMMENT_NOT_OWNED)
 from marshmallow import fields
 from conduit.utils import jwt_optional
+import datetime as dt
 
 
 blueprint = Blueprint('articles', __name__)
 
+
+##########
+# Articles
+##########
 
 @blueprint.route('/api/articles', methods=('GET',))
 @jwt_optional()
@@ -28,7 +35,6 @@ def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
         res = res.join(Article.author).filter(User.username == author)
     if favorited:
         res = res.join(Article.favoriters).filter(User.username == favorited)
-    print(current_identity)
     return res.offset(offset).limit(limit).all()
 
 
@@ -61,7 +67,7 @@ def update_article(slug, **kwargs):
     article = Article.query.filter_by(slug=slug, author_id=current_identity.profile.id).first()
     if not article:
         raise InvalidUsage(**ARTICLE_NOT_FOUND)
-    article.update(**kwargs)
+    article.update(**kwargs, updatedAt=dt.datetime.utcnow)
     article.save()
     return article
 
@@ -113,3 +119,42 @@ def articles_feed(limit=20, offset=0):
 @blueprint.route('/api/tags', methods=('GET',))
 def get_tags():
     return jsonify({'tags': [tag.tagname for tag in Tags.query.all()]})
+
+
+##########
+# Comments
+##########
+
+
+@blueprint.route('/api/articles/<slug>/comments', methods=('GET',))
+@marshal_with(comments_schema)
+def get_comments(slug):
+    article = Article.query.filter_by(slug=slug).first()
+    if not article:
+        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+    return article.comments
+
+
+@blueprint.route('/api/articles/<slug>/comments', methods=('POST',))
+@jwt_required()
+@use_kwargs(comment_schema)
+@marshal_with(comment_schema)
+def make_comment_on_article(slug, body, **kwargs):
+    article = Article.query.filter_by(slug=slug).first()
+    if not article:
+        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+    comment = Comment(article, current_identity.profile, body, **kwargs)
+    comment.save()
+    return comment
+
+
+@blueprint.route('/api/articles/<slug>/comments/<cid>', methods=('DELETE',))
+@jwt_required()
+def delete_comment_on_article(slug, cid):
+    article = Article.query.filter_by(slug=slug).first()
+    if not article:
+        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+
+    comment = article.comments.filter_by(id=cid, author=current_identity.profile).first()
+    comment.delete()
+    return '', 200

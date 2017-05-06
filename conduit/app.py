@@ -4,7 +4,6 @@ from flask import Flask
 from conduit.extensions import bcrypt, cache, db, migrate, jwt
 
 from conduit import commands, user, profile, articles
-from conduit.assets import assets
 from conduit.settings import ProdConfig
 from conduit.exceptions import InvalidUsage
 
@@ -26,7 +25,6 @@ def create_app(config_object=ProdConfig):
 
 def register_extensions(app):
     """Register Flask extensions."""
-    assets.init_app(app)
     bcrypt.init_app(app)
     cache.init_app(app)
     db.init_app(app)

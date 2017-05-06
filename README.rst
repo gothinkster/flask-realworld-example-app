@@ -2,6 +2,11 @@
 Real World FLask
 ===============================
 
+build status
+
+.. image:: https://travis-ci.org/mohamed-aziz/simplegen.png
+
+
 .. image:: image.png
 
 

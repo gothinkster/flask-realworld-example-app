@@ -29,7 +29,7 @@ class TestProfile:
     def test_follow_user(self, testapp, user):
         user = user.get()
         resp = _register_user(testapp)
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         resp = testapp.post(url_for('profiles.follow_user', username=user.username), headers={
             'Authorization': 'Token %s' % token
         })
@@ -38,7 +38,7 @@ class TestProfile:
     def test_unfollow_user(self, testapp, user):
         user = user.get()
         resp = _register_user(testapp)
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         resp = testapp.delete(url_for('profiles.unfollow_user', username=user.username), headers={
             'Authorization': 'Token %s' % token
         })

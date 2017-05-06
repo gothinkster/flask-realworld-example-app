@@ -12,7 +12,7 @@ class TestArticleViews:
             'password': 'myprecious'
         }})
 
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         for _ in range(2):
             testapp.post_json(url_for('articles.make_article'), {
                 "article": {
@@ -35,7 +35,7 @@ class TestArticleViews:
             'password': 'myprecious'
         }})
 
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         resp1 = testapp.post_json(url_for('articles.make_article'), {
             "article": {
                 "title": "How to train your dragon",
@@ -58,7 +58,7 @@ class TestArticleViews:
             'password': 'myprecious'
         }})
 
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         for _ in range(2):
             testapp.post_json(url_for('articles.make_article'), {
                 "article": {
@@ -81,7 +81,7 @@ class TestArticleViews:
             'password': 'myprecious'
         }})
 
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         resp = testapp.post_json(url_for('articles.make_article'), {
             "article": {
                 "title": "How to train your dragon",

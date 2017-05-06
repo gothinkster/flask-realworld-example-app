@@ -34,7 +34,7 @@ class TestAuthenticate:
 
     def test_get_user(self, testapp):
         resp = _register_user(testapp)
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         resp = testapp.get(url_for('user.get_user'), headers={
             'Authorization': 'Token %s' % token
         })
@@ -49,7 +49,7 @@ class TestAuthenticate:
 
     def test_update_user(self, testapp):
         resp = _register_user(testapp)
-        token = resp.json['user']['token']
+        token = str(resp.json['user']['token'])
         resp = testapp.put_json(url_for('user.update_user'), {
             'user': {
                 'email': 'meh@mo.mo',

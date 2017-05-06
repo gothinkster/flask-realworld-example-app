@@ -16,9 +16,9 @@ class UserSchema(Schema):
     @pre_load
     def make_user(self, data):
         data = data['user']
-        if data['email'] == '':
+        if data.get('email') == '':
             del data['email']
-        if data['image'] == '':
+        if data.get('image') == '':
             del data['image']
         return data
 

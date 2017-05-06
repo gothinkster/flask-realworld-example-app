@@ -7,5 +7,8 @@ python:
   - 3.5
   - 3.6
 install: pip install -r requirements/dev.txt
-before_script: flask lint
+before_script:
+  - export FLASK_APP="$TRAVIS_BUILD_DIR/autoapp.py"
+  - export FLASK_DEBUG=1
+
 script: flask test

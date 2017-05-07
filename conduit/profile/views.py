@@ -32,7 +32,7 @@ def follow_user(username):
     if not user:
         raise InvalidUsage(**USER_NOT_FOUND)
     current_identity.profile.follow(user.profile)
-    print(user.profile.following)
+    current_identity.profile.save()
     return user.profile
 
 
@@ -44,4 +44,5 @@ def unfollow_user(username):
     if not user:
         raise InvalidUsage(**USER_NOT_FOUND)
     current_identity.profile.unfollow(user.profile)
+    current_identity.profile.save()
     return user.profile

@@ -36,7 +36,6 @@ def register_user(username, password, email, **kwargs):
 def login_user(email, password, **kwargs):
     user = User.query.filter_by(email=email).first()
     if user is not None and user.check_password(password):
-        print(user.token)
         return user
     else:
         raise InvalidUsage(**USER_NOT_FOUND)

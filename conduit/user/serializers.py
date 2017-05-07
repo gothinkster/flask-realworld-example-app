@@ -9,16 +9,18 @@ class UserSchema(Schema):
     password = fields.Str(load_only=True)
     bio = fields.Str()
     image = fields.Url()
-    token = fields.Str()
+    token = fields.Str(dump_only=True)
     # ugly hack.
     user = fields.Nested('self', exclude=('user',), default=True, load_only=True)
 
     @pre_load
     def make_user(self, data):
         data = data['user']
-        if data.get('email') == '':
+        # some of the frontends send this like an empty string and some send
+        # null
+        if not data.get('email', True):
             del data['email']
-        if data.get('image') == '':
+        if not data.get('image', True):
             del data['image']
         return data
 

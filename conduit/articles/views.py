@@ -34,7 +34,7 @@ def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
     if tag:
         res = res.filter(Article.tagList.any(Tags.tagname == tag))
     if author:
-        res = res.join(Article.author).filter(User.username == author)
+        res = res.join(Article.author).join(User).filter(User.username == author)
     if favorited:
         res = res.join(Article.favoriters).filter(User.username == favorited)
     return res.offset(offset).limit(limit).all()
@@ -124,8 +124,8 @@ def unfavorite_an_article(slug):
 @use_kwargs({'limit': fields.Int(), 'offset': fields.Int()})
 @marshal_with(articles_schema)
 def articles_feed(limit=20, offset=0):
-    return current_identity.profile.follows.join(Article).order_by(Article.createdAt.desc())\
-                                           .offset(offset).limit(limit).all()
+    return Article.query.join(current_identity.profile.follows).\
+        order_by(Article.createdAt.desc()).offset(offset).limit(limit).all()
 
 
 ######

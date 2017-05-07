@@ -23,7 +23,8 @@ class ProdConfig(Config):
 
     ENV = 'prod'
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/example'  # TODO: Change me
+    SQLALCHEMY_DATABASE_URI = os.environ.get('CONDUIT_DB_URI',
+                                             'postgresql://localhost/example')
     DEBUG_TB_ENABLED = False  # Disable Debug toolbar
 
 
@@ -48,4 +49,5 @@ class TestConfig(Config):
     TESTING = True
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
-    BCRYPT_LOG_ROUNDS = 4  # For faster tests; needs at least 4 to avoid "ValueError: Invalid rounds"
+    # For faster tests; needs at least 4 to avoid "ValueError: Invalid rounds"
+    BCRYPT_LOG_ROUNDS = 4

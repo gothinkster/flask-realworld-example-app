@@ -5,15 +5,17 @@ from conduit.exceptions import USER_ALREADY_REGISTERED
 
 
 def _register_user(testapp, **kwargs):
-    return testapp.post_json(url_for('user.register_user'), {
-          "user": {
-              "username": "mo",
-              "email": "mo@mo.mo",
-              "password": "momo"
-          }}, **kwargs)
+    return testapp.post_json(url_for("user.register_user"), {
+        "user": {
+            "username": "mo",
+            "email": "mo@mo.mo",
+            "password": "momo"
+        }
+    }, **kwargs)
 
 
 class TestAuthenticate:
+
     def test_register_user(self, testapp):
         resp = _register_user(testapp)
         assert resp.json['user']['email'] == 'mo@mo.mo'
@@ -36,7 +38,7 @@ class TestAuthenticate:
         resp = _register_user(testapp)
         token = str(resp.json['user']['token'])
         resp = testapp.get(url_for('user.get_user'), headers={
-            'Authorization': 'Token %s' % token
+            'Authorization': 'Token {}'.format(token)
         })
         assert resp.json['user']['email'] == 'mo@mo.mo'
         assert resp.json['user']['token'] == token
@@ -57,7 +59,7 @@ class TestAuthenticate:
                 'password': 'hmm'
             }
         }, headers={
-            'Authorization': 'Token %s' % token
+            'Authorization': 'Token {}'.format(token)
         })
         assert resp.json['user']['bio'] == 'I\'m a simple man'
         assert resp.json['user']['email'] == 'meh@mo.mo'

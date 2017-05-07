@@ -50,8 +50,8 @@ class TestUser:
         """Check password."""
         user = User.create(username='foo', email='foo@bar.com',
                            password='foobarbaz123')
-        assert user.check_password('foobarbaz123') is True
-        assert user.check_password('barfoobaz') is False
+        assert user.check_password('foobarbaz123')
+        assert not user.check_password('barfoobaz')
 
 
 @pytest.mark.usefixtures('db')
@@ -67,7 +67,7 @@ class TestProfile:
         p1.save()
         p2.save()
         p1.follow(p2)
-        assert p1.is_following(p2) is True
+        assert p1.is_following(p2)
 
     def test_unfollow_user(self):
         u1 = User('foo', 'foo@bar.com')
@@ -79,22 +79,22 @@ class TestProfile:
         p1.save()
         p2.save()
         p1.follow(p2)
-        assert p1.is_following(p2) is True
+        assert p1.is_following(p2)
         p1.unfollow(p2)
-        assert p1.is_following(p2) is False
+        assert not p1.is_following(p2)
 
     def test_follow_self(self):
         u1 = User('foo', 'foo@bar.com')
         u1.save()
         p1 = UserProfile(u1)
         p1.save()
-        assert p1.follow(p1) is False
+        assert not p1.follow(p1)
 
     def test_unfollow_self(self):
         u1 = User('foo', 'foo@bar.com')
         u1.save()
         p1 = UserProfile(u1)
-        assert p1.unfollow(p1) is False
+        assert not p1.unfollow(p1)
 
 
 @pytest.mark.usefixtures('db')
@@ -103,7 +103,7 @@ class TestArticles:
         u1 = user.get()
         article = Article(u1.profile, 'title', 'some body', description='some')
         article.save()
-        assert article.author.user is u1
+        assert article.author.user == u1
 
     def test_favorite_an_article(self):
         u1 = User('foo', 'foo@bar.com')
@@ -112,8 +112,8 @@ class TestArticles:
         p1.save()
         article = Article(p1, 'title', 'some body', description='some')
         article.save()
-        assert article.favourite(u1.profile) is True
-        assert article.is_favourite(u1.profile) is True
+        assert article.favourite(u1.profile)
+        assert article.is_favourite(u1.profile)
 
     def test_unfavorite_an_article(self):
         u1 = User('foo', 'foo@bar.com')
@@ -128,9 +128,9 @@ class TestArticles:
 
         article = Article(p1, 'title', 'some body', description='some')
         article.save()
-        assert article.favourite(p1) is True
-        assert article.unfavourite(p1) is True
-        assert article.is_favourite(p1) is False
+        assert article.favourite(p1)
+        assert article.unfavourite(p1)
+        assert not article.is_favourite(p1)
 
     def test_add_tag(self, user):
         user = user.get()
@@ -138,8 +138,8 @@ class TestArticles:
         article.save()
         t = Tags(tagname='python')
         t1 = Tags(tagname='flask')
-        assert article.add_tag(t) is True
-        assert article.add_tag(t1) is True
+        assert article.add_tag(t)
+        assert article.add_tag(t1)
         assert len(article.tagList) == 2
 
     def test_remove_tag(self, user):
@@ -147,8 +147,8 @@ class TestArticles:
         article = Article(user.profile, 'title', 'some body', description='some')
         article.save()
         t1 = Tags(tagname='flask')
-        assert article.add_tag(t1) is True
-        assert article.remove_tag(t1) is True
+        assert article.add_tag(t1)
+        assert article.remove_tag(t1)
         assert len(article.tagList) == 0
 
 
@@ -162,8 +162,8 @@ class TestComment:
         comment = Comment(article, user.profile, 'some body')
         comment.save()
 
-        assert comment.article is article
-        assert comment.author is user.profile
+        assert comment.article == article
+        assert comment.author == user.profile
 
     def test_make_comments(self, user):
         user = user.get()
@@ -174,8 +174,8 @@ class TestComment:
         comment.save()
         comment1.save()
 
-        assert comment.article is article
-        assert comment.author is user.profile
-        assert comment1.article is article
-        assert comment1.author is user.profile
+        assert comment.article == article
+        assert comment.author == user.profile
+        assert comment1.article == article
+        assert comment1.author == user.profile
         assert len(article.comments.all()) == 2

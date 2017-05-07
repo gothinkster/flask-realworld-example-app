@@ -53,7 +53,7 @@ def clean():
 
     Borrowed from Flask-Script, converted to use Click.
     """
-    for dirpath, dirnames, filenames in os.walk('.'):
+    for dirpath, _, filenames in os.walk('.'):
         for filename in filenames:
             if filename.endswith('.pyc') or filename.endswith('.pyo'):
                 full_pathname = os.path.join(dirpath, filename)
@@ -79,9 +79,8 @@ def urls(url, order):
     if url:
         try:
             rule, arguments = (
-                current_app.url_map
-                           .bind('localhost')
-                           .match(url, return_rule=True))
+                current_app.url_map.bind('localhost')
+                .match(url, return_rule=True))
             rows.append((rule.rule, rule.endpoint, arguments))
             column_length = 3
         except (NotFound, MethodNotAllowed) as e:

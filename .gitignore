@@ -46,3 +46,6 @@ docs/_build
 env/
 dev.db
 .cache/v/cache
+
+# migrations
+migrations/

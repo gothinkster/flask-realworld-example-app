@@ -19,7 +19,7 @@ class TestProfile:
         _register_user(testapp)
         resp = testapp.get(url_for('profiles.get_profile', username='foobar'))
         assert resp.json['profile']['email'] == 'foo@bar.com'
-        assert resp.json['profile']['following'] is False
+        assert not resp.json['profile']['following']
 
     def test_get_profile_not_existing(self, testapp):
         resp = testapp.get(url_for('profiles.get_profile', username='foobar'), expect_errors=True)
@@ -31,15 +31,15 @@ class TestProfile:
         resp = _register_user(testapp)
         token = str(resp.json['user']['token'])
         resp = testapp.post(url_for('profiles.follow_user', username=user.username), headers={
-            'Authorization': 'Token %s' % token
+            'Authorization': 'Token {}'.format(token)
         })
-        resp.json['profile']['following'] is True
+        assert resp.json['profile']['following']
 
     def test_unfollow_user(self, testapp, user):
         user = user.get()
         resp = _register_user(testapp)
         token = str(resp.json['user']['token'])
         resp = testapp.delete(url_for('profiles.unfollow_user', username=user.username), headers={
-            'Authorization': 'Token %s' % token
+            'Authorization': 'Token {}'.format(token)
         })
-        resp.json['profile']['following'] is False
+        assert not resp.json['profile']['following']

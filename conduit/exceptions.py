@@ -12,17 +12,16 @@ class InvalidUsage(Exception):
         self.payload = payload
 
     def to_json(self):
-        rv = dict(self.payload or ())
         rv = self.message
         return jsonify(rv)
 
 
-def TEMPLATE(data, code=500):
+def template(data, code=500):
     return {'message': {'errors': {'body': data}}, 'status_code': code}
 
 
-USER_NOT_FOUND = TEMPLATE(['User not found'], code=404)
-USER_ALREADY_REGISTERED = TEMPLATE(['User already registered'], code=422)
-UNKONW_ERROR = TEMPLATE([], code=500)
-ARTICLE_NOT_FOUND = TEMPLATE(['Article not found'], code=404)
-COMMENT_NOT_OWNED = TEMPLATE(['Not your article'], code=422)
+USER_NOT_FOUND = template(['User not found'], code=404)
+USER_ALREADY_REGISTERED = template(['User already registered'], code=422)
+UNKONW_ERROR = template([], code=500)
+ARTICLE_NOT_FOUND = template(['Article not found'], code=404)
+COMMENT_NOT_OWNED = template(['Not your article'], code=422)

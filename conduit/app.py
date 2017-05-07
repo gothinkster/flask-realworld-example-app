@@ -9,7 +9,8 @@ from conduit.exceptions import InvalidUsage
 
 
 def create_app(config_object=ProdConfig):
-    """An application factory, as explained here: http://flask.pocoo.org/docs/patterns/appfactories/.
+    """An application factory, as explained here:
+    http://flask.pocoo.org/docs/patterns/appfactories/.
 
     :param config_object: The configuration object to use.
     """
@@ -30,7 +31,6 @@ def register_extensions(app):
     db.init_app(app)
     migrate.init_app(app, db)
     jwt.init_app(app)
-    return None
 
 
 def register_blueprints(app):
@@ -38,14 +38,15 @@ def register_blueprints(app):
     app.register_blueprint(user.views.blueprint)
     app.register_blueprint(profile.views.blueprint)
     app.register_blueprint(articles.views.blueprint)
-    return None
 
 
 def register_errorhandlers(app):
+
     def errorhandler(error):
         response = error.to_json()
         response.status_code = error.status_code
         return response
+
     app.errorhandler(InvalidUsage)(errorhandler)
 
 

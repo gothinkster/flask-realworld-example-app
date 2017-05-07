@@ -15,6 +15,6 @@ migrate = Migrate()
 cache = Cache()
 cors = CORS()
 
-from conduit.utils import authenticate, jwt_identity # noqa
+from conduit.utils import authenticate, jwt_identity  # noqa
 
 jwt = JWT(authentication_handler=authenticate, identity_handler=jwt_identity)

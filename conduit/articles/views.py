@@ -48,7 +48,7 @@ def make_article(body, title, description, tagList=None):
     try:
         article = Article(title=title, description=description, body=body,
                           author=current_identity.profile)
-    except IntegrityError as e:
+    except IntegrityError:
         db.session.rollback()
         raise InvalidUsage(**UNKONW_ERROR)
     if tagList is not None:

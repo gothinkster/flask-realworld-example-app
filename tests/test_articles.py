@@ -16,13 +16,13 @@ class TestArticleViews:
         for _ in range(2):
             testapp.post_json(url_for('articles.make_article'), {
                 "article": {
-                    "title": "How to train your dragon %i" % _,
+                    "title": "How to train your dragon {}".format(_),
                     "description": "Ever wonder how?",
                     "body": "You have to believe",
                     "tagList": ["reactjs", "angularjs", "dragons"]
                 }
             }, headers={
-                'Authorization': 'Token %s' % token
+                'Authorization': 'Token {}'.format(token)
             })
 
         resp = testapp.get(url_for('articles.get_articles', author=user.username))
@@ -44,12 +44,16 @@ class TestArticleViews:
                 "tagList": ["reactjs", "angularjs", "dragons"]
             }
         }, headers={
-            'Authorization': 'Token %s' % token
+            'Authorization': 'Token {}'.format(token)
         })
 
         resp = testapp.post(url_for('articles.favorite_an_article',
-                                    slug=resp1.json['article']['slug']), headers={'Authorization': 'Token %s' % token})
-        assert resp.json['article']['favorited'] is True
+                                    slug=resp1.json['article']['slug']),
+                            headers={
+                                'Authorization': 'Token {}'.format(token)
+                                }
+                           )
+        assert resp.json['article']['favorited']
 
     def test_get_articles_by_favoriter(self, testapp, user):
         user = user.get()
@@ -62,13 +66,13 @@ class TestArticleViews:
         for _ in range(2):
             testapp.post_json(url_for('articles.make_article'), {
                 "article": {
-                    "title": "How to train your dragon %i" % _,
+                    "title": "How to train your dragon {}".format(_),
                     "description": "Ever wonder how?",
                     "body": "You have to believe",
                     "tagList": ["reactjs", "angularjs", "dragons"]
                 }
             }, headers={
-                'Authorization': 'Token %s' % token
+                'Authorization': 'Token {}'.format(token)
             })
 
         resp = testapp.get(url_for('articles.get_articles', author=user.username))
@@ -90,7 +94,7 @@ class TestArticleViews:
                 "tagList": ["reactjs", "angularjs", "dragons"]
             }
         }, headers={
-            'Authorization': 'Token %s' % token
+            'Authorization': 'Token {}'.format(token)
         })
         assert resp.json['article']['author']['email'] == user.email
         assert resp.json['article']['body'] == 'You have to believe'

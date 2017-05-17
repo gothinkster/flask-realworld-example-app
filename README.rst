@@ -1,7 +1,5 @@
 .. image:: image.png
 
-.. image:: https://travis-ci.org/mohamed-aziz/simplegen.png
-
 Quickstart
 ----------
 
@@ -20,7 +18,7 @@ environment variables ::
 
 Then run the following commands to bootstrap your environment ::
 
-    git clone https://github.com/mohamed-aziz/realworld-flask.git
+    git clone https://github.com/gothinkster/flask-realworld-example-app.git
     cd realworld-flask
     pip install -r requirements/dev.txt
     flask run --with-threads

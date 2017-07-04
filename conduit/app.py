@@ -61,6 +61,7 @@ def register_shellcontext(app):
             'UserProfile': profile.models.UserProfile,
             'Article': articles.models.Article,
             'Tag': articles.models.Tags,
+            'Comment': articles.models.Comment,
         }
 
     app.shell_context_processor(shell_context)

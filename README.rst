@@ -29,6 +29,9 @@ database tables and perform the initial migration ::
     flask db init
     flask db migrate
     flask db upgrade
+
+To run the web application use::
+
     flask run --with-threads
 
 
@@ -47,7 +50,7 @@ To open the interactive shell, run ::
 
     flask shell
 
-By default, you will have access to the flask ``app``.
+By default, you will have access to the flask ``app`` and models.
 
 
 Running Tests

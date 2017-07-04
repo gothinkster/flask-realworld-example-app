@@ -19,13 +19,11 @@ environment variables ::
 Then run the following commands to bootstrap your environment ::
 
     git clone https://github.com/gothinkster/flask-realworld-example-app.git
-    cd realworld-flask
+    cd flask-realworld-example-app
     pip install -r requirements/dev.txt
-    flask run --with-threads
 
-You will see a pretty welcome screen.
 
-Once you have installed your DBMS, run the following to create your app's
+Run the following commands to create your app's
 database tables and perform the initial migration ::
 
     flask db init
@@ -38,7 +36,8 @@ Deployment
 ----------
 
 In your production environment, make sure the ``FLASK_DEBUG`` environment
-variable is unset or is set to ``0``, so that ``ProdConfig`` is used.
+variable is unset or is set to ``0``, so that ``ProdConfig`` is used, and
+set ``DATABASE_URL`` (this is set by default in heroku).
 
 
 Shell

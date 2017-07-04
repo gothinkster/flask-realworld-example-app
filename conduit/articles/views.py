@@ -1,19 +1,19 @@
 # coding: utf-8
 
+import datetime as dt
+
 from flask import Blueprint, jsonify
 from flask_apispec import marshal_with, use_kwargs
+from flask_jwt import jwt_required, current_identity
+from marshmallow import fields
+
+from .models import Article, Tags, Comment
 from .serializers import (article_schema, articles_schema, comment_schema,
                           comments_schema)
-from flask_jwt import jwt_required, current_identity
-from .models import Article, Tags, Comment
-from sqlalchemy.exc import IntegrityError
-from conduit.user.models import User
-from conduit.exceptions import (InvalidUsage, UNKONW_ERROR, ARTICLE_NOT_FOUND)
-from marshmallow import fields
-from conduit.utils import jwt_optional
-import datetime as dt
-from conduit.database import db
+from conduit.exceptions import InvalidUsage
 from conduit.extensions import cors
+from conduit.user.models import User
+from conduit.utils import jwt_optional
 
 
 blueprint = Blueprint('articles', __name__)
@@ -45,12 +45,8 @@ def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
 @use_kwargs(article_schema)
 @marshal_with(article_schema)
 def make_article(body, title, description, tagList=None):
-    try:
-        article = Article(title=title, description=description, body=body,
-                          author=current_identity.profile)
-    except IntegrityError:
-        db.session.rollback()
-        raise InvalidUsage(**UNKONW_ERROR)
+    article = Article(title=title, description=description, body=body,
+                      author=current_identity.profile)
     if tagList is not None:
         for tag in tagList:
             mtag = Tags.query.filter_by(tagname=tag).first()
@@ -69,7 +65,7 @@ def make_article(body, title, description, tagList=None):
 def update_article(slug, **kwargs):
     article = Article.query.filter_by(slug=slug, author_id=current_identity.profile.id).first()
     if not article:
-        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+        raise InvalidUsage.article_not_found()
     article.update(updatedAt=dt.datetime.utcnow, **kwargs)
     article.save()
     return article
@@ -89,7 +85,7 @@ def delete_article(slug):
 def get_article(slug):
     article = Article.query.filter_by(slug=slug).first()
     if not article:
-        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+        raise InvalidUsage.article_not_found()
     return article
 
 
@@ -100,7 +96,7 @@ def favorite_an_article(slug):
     profile = current_identity.profile
     article = Article.query.filter_by(slug=slug).first()
     if not article:
-        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+        raise InvalidUsage.article_not_found()
     article.favourite(profile)
     article.save()
     return article
@@ -113,7 +109,7 @@ def unfavorite_an_article(slug):
     profile = current_identity.profile
     article = Article.query.filter_by(slug=slug).first()
     if not article:
-        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+        raise InvalidUsage.article_not_found()
     article.unfavourite(profile)
     article.save()
     return article
@@ -147,7 +143,7 @@ def get_tags():
 def get_comments(slug):
     article = Article.query.filter_by(slug=slug).first()
     if not article:
-        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+        raise InvalidUsage.article_not_found()
     return article.comments
 
 
@@ -158,7 +154,7 @@ def get_comments(slug):
 def make_comment_on_article(slug, body, **kwargs):
     article = Article.query.filter_by(slug=slug).first()
     if not article:
-        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+        raise InvalidUsage.article_not_found()
     comment = Comment(article, current_identity.profile, body, **kwargs)
     comment.save()
     return comment
@@ -169,7 +165,7 @@ def make_comment_on_article(slug, body, **kwargs):
 def delete_comment_on_article(slug, cid):
     article = Article.query.filter_by(slug=slug).first()
     if not article:
-        raise InvalidUsage(**ARTICLE_NOT_FOUND)
+        raise InvalidUsage.article_not_found()
 
     comment = article.comments.filter_by(id=cid, author=current_identity.profile).first()
     comment.delete()

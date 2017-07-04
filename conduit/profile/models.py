@@ -1,6 +1,8 @@
+from flask_jwt import current_identity
+
 from conduit.database import (Model, SurrogatePK, db,
                               reference_col, relationship)
-from flask_jwt import current_identity
+
 
 followers_assoc = db.Table("followers_assoc",
                            db.Column("follower", db.Integer, db.ForeignKey("userprofile.user_id")),

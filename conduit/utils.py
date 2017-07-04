@@ -5,11 +5,11 @@ from functools import wraps
 from flask_jwt import _jwt
 import jwt
 
+
 def jwt_optional(realm=None):
     def wrapper(fn):
         @wraps(fn)
         def decorator(*args, **kwargs):
-
             token = _jwt.request_callback()
             try:
                 payload = _jwt.jwt_decode_callback(token)
@@ -23,13 +23,6 @@ def jwt_optional(realm=None):
 
 
 from conduit.user.models import User # noqa
-
-
-def flash_errors(form, category='warning'):
-    """Flash all errors for a form."""
-    for field, errors in form.errors.items():
-        for error in errors:
-            flash('{0} - {1}'.format(getattr(form, field).label.text, error), category)
 
 
 def jwt_identity(payload):

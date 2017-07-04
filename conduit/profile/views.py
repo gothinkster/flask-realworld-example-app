@@ -3,11 +3,12 @@
 from flask import Blueprint
 from flask_apispec import marshal_with
 from flask_jwt import current_identity, jwt_required
-from conduit.user.models import User
+
 from .serializers import profile_schema
-from conduit.exceptions import InvalidUsage, USER_NOT_FOUND
-from conduit.utils import jwt_optional
+from conduit.exceptions import InvalidUsage
 from conduit.extensions import cors
+from conduit.user.models import User
+from conduit.utils import jwt_optional
 
 
 blueprint = Blueprint('profiles', __name__)
@@ -20,7 +21,7 @@ cors.init_app(blueprint)
 def get_profile(username):
     user = User.query.filter_by(username=username).first()
     if not user:
-        raise InvalidUsage(**USER_NOT_FOUND)
+        raise InvalidUsage.user_not_found()
     return user.profile
 
 
@@ -30,7 +31,7 @@ def get_profile(username):
 def follow_user(username):
     user = User.query.filter_by(username=username).first()
     if not user:
-        raise InvalidUsage(**USER_NOT_FOUND)
+        raise InvalidUsage.user_not_found()
     current_identity.profile.follow(user.profile)
     current_identity.profile.save()
     return user.profile
@@ -42,7 +43,7 @@ def follow_user(username):
 def unfollow_user(username):
     user = User.query.filter_by(username=username).first()
     if not user:
-        raise InvalidUsage(**USER_NOT_FOUND)
+        raise InvalidUsage.user_not_found()
     current_identity.profile.unfollow(user.profile)
     current_identity.profile.save()
     return user.profile

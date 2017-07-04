@@ -2,9 +2,10 @@
 """User models."""
 import datetime as dt
 
+from flask_jwt import _default_jwt_encode_handler
+
 from conduit.database import Column, Model, SurrogatePK, db
 from conduit.extensions import bcrypt
-from flask_jwt import _default_jwt_encode_handler
 
 
 class User(SurrogatePK, Model):

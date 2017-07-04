@@ -1,16 +1,17 @@
 # -*- coding: utf-8 -*-
 """User views."""
 from flask import Blueprint
-from .serializers import user_schema
-from .models import User
-from conduit.profile.models import UserProfile
-from flask_jwt import current_identity, jwt_required
 from flask_apispec import use_kwargs, marshal_with
+from flask_jwt import current_identity, jwt_required
 from sqlalchemy.exc import IntegrityError
-from conduit.exceptions import USER_ALREADY_REGISTERED, InvalidUsage, USER_NOT_FOUND
-from conduit.utils import jwt_optional
+
+from .models import User
+from .serializers import user_schema
 from conduit.database import db
+from conduit.exceptions import InvalidUsage
 from conduit.extensions import cors
+from conduit.profile.models import UserProfile
+from conduit.utils import jwt_optional
 
 
 blueprint = Blueprint('user', __name__)
@@ -25,7 +26,7 @@ def register_user(username, password, email, **kwargs):
         userprofile = UserProfile(User(username, email, password=password, **kwargs).save()).save()
     except IntegrityError:
         db.session.rollback()
-        raise InvalidUsage(**USER_ALREADY_REGISTERED)
+        raise InvalidUsage.user_already_registered()
     return userprofile.user
 
 
@@ -38,7 +39,7 @@ def login_user(email, password, **kwargs):
     if user is not None and user.check_password(password):
         return user
     else:
-        raise InvalidUsage(**USER_NOT_FOUND)
+        raise InvalidUsage.user_not_found()
 
 
 @blueprint.route('/api/user', methods=('GET',))

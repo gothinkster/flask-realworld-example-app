@@ -1,11 +1,14 @@
 # coding: utf-8
 
+import datetime as dt
+
+from flask_jwt import current_identity
+from slugify import slugify
+
 from conduit.database import (Model, SurrogatePK, db, Column,
                               reference_col, relationship)
-import datetime as dt
-from slugify import slugify
-from flask_jwt import current_identity
 from conduit.profile.models import UserProfile
+
 
 favoriter_assoc = db.Table("favoritor_assoc",
                            db.Column("favoriter", db.Integer, db.ForeignKey("userprofile.id")),

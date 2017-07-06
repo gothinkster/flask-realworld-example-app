@@ -3,6 +3,11 @@
 Quickstart
 ----------
 
+CircleCI build:
+
+.. image:: https://circleci.com/gh/gothinkster/flask-realworld-example-app.png
+
+
 First, set your app's secret key as an environment variable. For example,
 add the following to ``.bashrc`` or ``.bash_profile``.
 

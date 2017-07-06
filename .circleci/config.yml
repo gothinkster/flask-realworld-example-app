@@ -1,0 +1,18 @@
+version: 2
+jobs:
+  build:
+    working_directory: /home/mo/circulate
+    docker:
+      - image: python:3.6.0
+        environment:
+          FLASK_APP: autoapp.py
+          FLASK_DEBUG: 1
+    steps:
+      - checkout
+      - run:
+          name: install deps
+          command: pip install -r requirements/dev.txt
+
+      - run:
+          name: run tests
+          command: flask test

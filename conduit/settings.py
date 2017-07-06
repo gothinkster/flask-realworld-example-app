@@ -16,6 +16,12 @@ class Config(object):
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_AUTH_USERNAME_KEY = 'email'
     JWT_AUTH_HEADER_PREFIX = 'Token'
+    CORS_ORIGIN_WHITELIST = [
+        '127.0.0.1:8000',
+        '0.0.0.0:8000',
+        '127.0.0.1:4100',
+        '0.0.0.0:4100',
+    ]
 
 
 class ProdConfig(Config):

@@ -12,7 +12,6 @@ from conduit.utils import jwt_optional
 
 
 blueprint = Blueprint('profiles', __name__)
-cors.init_app(blueprint)
 
 
 @blueprint.route('/api/profiles/<username>', methods=('GET',))

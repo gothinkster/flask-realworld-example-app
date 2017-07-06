@@ -15,7 +15,6 @@ from conduit.utils import jwt_optional
 
 
 blueprint = Blueprint('user', __name__)
-cors.init_app(blueprint)
 
 
 @blueprint.route('/api/users', methods=('POST',))

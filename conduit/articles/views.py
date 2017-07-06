@@ -17,7 +17,6 @@ from conduit.utils import jwt_optional
 
 
 blueprint = Blueprint('articles', __name__)
-cors.init_app(blueprint)
 
 
 ##########

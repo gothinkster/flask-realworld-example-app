@@ -21,6 +21,10 @@ class Config(object):
         'http://localhost:4100',
         'http://0.0.0.0:8000',
         'http://localhost:8000',
+        'http://0.0.0.0:4200',
+        'http://localhost:4200',
+        'http://0.0.0.0:4000',
+        'http://localhost:4000',
     ]
 
 

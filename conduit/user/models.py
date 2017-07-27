@@ -15,6 +15,7 @@ class User(SurrogatePK, Model):
     email = Column(db.String(100), unique=True, nullable=False)
     password = Column(db.Binary(128), nullable=True)
     created_at = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+    updated_at = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
     bio = Column(db.String(300), nullable=True)
     image = Column(db.String(120), nullable=True)
 

@@ -58,5 +58,7 @@ def update_user(**kwargs):
     password = kwargs.pop('password', None)
     if password:
         user.set_password(password)
+    if 'updated_at' in kwargs:
+        kwargs['updated_at'] = user.created_at.replace(tzinfo=None)
     user.update(**kwargs)
     return user

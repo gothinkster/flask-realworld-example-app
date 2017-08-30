@@ -73,6 +73,7 @@ class CommentsSchema(CommentSchema):
 
     @post_dump
     def dump_comment(self, data):
+        data['author'] = data['author']['profile']
         return data
 
     @post_dump(pass_many=True)

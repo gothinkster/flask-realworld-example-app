@@ -63,6 +63,7 @@ class CommentSchema(Schema):
 
     @post_dump
     def dump_comment(self, data):
+        data['author'] = data['author']['profile']
         return {'comment': data}
 
     class Meta:

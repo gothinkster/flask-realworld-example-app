@@ -7,7 +7,6 @@ class ProfileSchema(Schema):
     password = fields.Str(load_only=True)
     bio = fields.Str()
     image = fields.Url()
-    token = fields.Str()
     following = fields.Boolean()
     # ugly hack.
     profile = fields.Nested('self', exclude=('profile',), default=True, load_only=True)

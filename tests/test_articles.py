@@ -1,7 +1,7 @@
 # coding: utf-8
 
 from flask import url_for
-
+from datetime import datetime
 
 class TestArticleViews:
 
@@ -98,3 +98,38 @@ class TestArticleViews:
         })
         assert resp.json['article']['author']['email'] == user.email
         assert resp.json['article']['body'] == 'You have to believe'
+
+    def test_make_comment_correct_schema(self, testapp, user):
+        from conduit.profile.serializers import profile_schema
+        user = user.get()
+        resp = testapp.post_json(url_for('user.login_user'), {'user': {
+            'email': user.email,
+            'password': 'myprecious'
+        }})
+
+        token = str(resp.json['user']['token'])
+        resp = testapp.post_json(url_for('articles.make_article'), {
+            "article": {
+                "title": "How to train your dragon",
+                "description": "Ever wonder how?",
+                "body": "You have to believe",
+                "tagList": ["reactjs", "angularjs", "dragons"]
+            }
+        }, headers={
+            'Authorization': 'Token {}'.format(token)
+        })
+        slug = resp.json['article']['slug']
+        # make a comment
+        resp = testapp.post_json(url_for('articles.make_comment_on_article', slug=slug), {
+            "comment": {
+                "createdAt": datetime.now().isoformat(),
+                "body": "You have to believe",
+            }
+        }, headers={
+            'Authorization': 'Token {}'.format(token)
+        })
+
+        # check
+        authorp = resp.json['comment']['author']
+        del authorp['following']
+        assert profile_schema.dump(user).data['profile'] == authorp

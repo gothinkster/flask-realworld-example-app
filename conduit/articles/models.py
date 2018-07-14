@@ -2,18 +2,16 @@
 
 import datetime as dt
 
-from flask_jwt import current_identity
+from flask_jwt_extended import current_user
 from slugify import slugify
 
 from conduit.database import (Model, SurrogatePK, db, Column,
                               reference_col, relationship)
 from conduit.profile.models import UserProfile
 
-
 favoriter_assoc = db.Table("favoritor_assoc",
                            db.Column("favoriter", db.Integer, db.ForeignKey("userprofile.id")),
                            db.Column("favorited_article", db.Integer, db.ForeignKey("article.id")))
-
 
 tag_assoc = db.Table("tag_assoc",
                      db.Column("tag", db.Integer, db.ForeignKey("tags.id")),
@@ -45,7 +43,7 @@ class Comment(Model, SurrogatePK):
     article_id = reference_col('article', nullable=False)
 
     def __init__(self, article, author, body, **kwargs):
-        db.Model.__init__(self, author=author,  body=body, article=article, **kwargs)
+        db.Model.__init__(self, author=author, body=body, article=article, **kwargs)
 
 
 class Article(SurrogatePK, Model):
@@ -108,7 +106,7 @@ class Article(SurrogatePK, Model):
 
     @property
     def favorited(self):
-        if current_identity:
-            profile = current_identity.profile
+        if current_user:
+            profile = current_user.profile
             return self.query.join(Article.favoriters).filter(UserProfile.id == profile.id).count() == 1
         return False

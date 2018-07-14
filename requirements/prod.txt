@@ -1,18 +1,17 @@
 # Everything needed in production
 
-Werkzeug==0.12.1
-SQLAlchemy==1.1.9
-Flask_Caching==1.2.0
-Flask_SQLAlchemy==2.2
-click==6.7
-marshmallow==2.13.5
-Flask_Bcrypt==0.7.1
-Flask_JWT==0.3.2
-flask_apispec==0.3.2
-Flask==0.12.1
-PyJWT==1.5.0
-unicode_slugify==0.1.3
-psycopg2==2.7.3.1
-Flask-Migrate==2.0.3
-gunicorn>=19.1.1
-Flask-Cors==3.0.2
+Werkzeug
+SQLAlchemy
+Flask_Caching
+Flask_SQLAlchemy
+click
+marshmallow
+Flask_Bcrypt
+flask_apispec
+Flask
+PyJWT
+unicode_slugify
+psycopg2
+Flask-Migrate
+gunicorn
+Flask-Cors

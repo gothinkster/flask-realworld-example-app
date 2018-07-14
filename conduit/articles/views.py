@@ -4,17 +4,14 @@ import datetime as dt
 
 from flask import Blueprint, jsonify
 from flask_apispec import marshal_with, use_kwargs
-from flask_jwt import jwt_required, current_identity
+from flask_jwt_extended import current_user, jwt_required, jwt_optional
 from marshmallow import fields
 
 from .models import Article, Tags, Comment
 from .serializers import (article_schema, articles_schema, comment_schema,
                           comments_schema)
 from conduit.exceptions import InvalidUsage
-from conduit.extensions import cors
 from conduit.user.models import User
-from conduit.utils import jwt_optional
-
 
 blueprint = Blueprint('articles', __name__)
 
@@ -24,7 +21,7 @@ blueprint = Blueprint('articles', __name__)
 ##########
 
 @blueprint.route('/api/articles', methods=('GET',))
-@jwt_optional()
+@jwt_optional
 @use_kwargs({'tag': fields.Str(), 'author': fields.Str(),
              'favorited': fields.Str(), 'limit': fields.Int(), 'offset': fields.Int()})
 @marshal_with(articles_schema)
@@ -40,12 +37,12 @@ def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
 
 
 @blueprint.route('/api/articles', methods=('POST',))
-@jwt_required()
+@jwt_required
 @use_kwargs(article_schema)
 @marshal_with(article_schema)
 def make_article(body, title, description, tagList=None):
     article = Article(title=title, description=description, body=body,
-                      author=current_identity.profile)
+                      author=current_user.profile)
     if tagList is not None:
         for tag in tagList:
             mtag = Tags.query.filter_by(tagname=tag).first()
@@ -58,11 +55,11 @@ def make_article(body, title, description, tagList=None):
 
 
 @blueprint.route('/api/articles/<slug>', methods=('PUT',))
-@jwt_required()
+@jwt_required
 @use_kwargs(article_schema)
 @marshal_with(article_schema)
 def update_article(slug, **kwargs):
-    article = Article.query.filter_by(slug=slug, author_id=current_identity.profile.id).first()
+    article = Article.query.filter_by(slug=slug, author_id=current_user.profile.id).first()
     if not article:
         raise InvalidUsage.article_not_found()
     article.update(updatedAt=dt.datetime.utcnow, **kwargs)
@@ -71,15 +68,15 @@ def update_article(slug, **kwargs):
 
 
 @blueprint.route('/api/articles/<slug>', methods=('DELETE',))
-@jwt_required()
+@jwt_required
 def delete_article(slug):
-    article = Article.query.filter_by(slug=slug, author_id=current_identity.profile.id).first()
+    article = Article.query.filter_by(slug=slug, author_id=current_user.profile.id).first()
     article.delete()
     return '', 200
 
 
 @blueprint.route('/api/articles/<slug>', methods=('GET',))
-@jwt_optional()
+@jwt_optional
 @marshal_with(article_schema)
 def get_article(slug):
     article = Article.query.filter_by(slug=slug).first()
@@ -89,10 +86,10 @@ def get_article(slug):
 
 
 @blueprint.route('/api/articles/<slug>/favorite', methods=('POST',))
-@jwt_required()
+@jwt_required
 @marshal_with(article_schema)
 def favorite_an_article(slug):
-    profile = current_identity.profile
+    profile = current_user.profile
     article = Article.query.filter_by(slug=slug).first()
     if not article:
         raise InvalidUsage.article_not_found()
@@ -102,10 +99,10 @@ def favorite_an_article(slug):
 
 
 @blueprint.route('/api/articles/<slug>/favorite', methods=('DELETE',))
-@jwt_required()
+@jwt_required
 @marshal_with(article_schema)
 def unfavorite_an_article(slug):
-    profile = current_identity.profile
+    profile = current_user.profile
     article = Article.query.filter_by(slug=slug).first()
     if not article:
         raise InvalidUsage.article_not_found()
@@ -115,11 +112,11 @@ def unfavorite_an_article(slug):
 
 
 @blueprint.route('/api/articles/feed', methods=('GET',))
-@jwt_required()
+@jwt_required
 @use_kwargs({'limit': fields.Int(), 'offset': fields.Int()})
 @marshal_with(articles_schema)
 def articles_feed(limit=20, offset=0):
-    return Article.query.join(current_identity.profile.follows).\
+    return Article.query.join(current_user.profile.follows). \
         order_by(Article.createdAt.desc()).offset(offset).limit(limit).all()
 
 
@@ -147,25 +144,25 @@ def get_comments(slug):
 
 
 @blueprint.route('/api/articles/<slug>/comments', methods=('POST',))
-@jwt_required()
+@jwt_required
 @use_kwargs(comment_schema)
 @marshal_with(comment_schema)
 def make_comment_on_article(slug, body, **kwargs):
     article = Article.query.filter_by(slug=slug).first()
     if not article:
         raise InvalidUsage.article_not_found()
-    comment = Comment(article, current_identity.profile, body, **kwargs)
+    comment = Comment(article, current_user.profile, body, **kwargs)
     comment.save()
     return comment
 
 
 @blueprint.route('/api/articles/<slug>/comments/<cid>', methods=('DELETE',))
-@jwt_required()
+@jwt_required
 def delete_comment_on_article(slug, cid):
     article = Article.query.filter_by(slug=slug).first()
     if not article:
         raise InvalidUsage.article_not_found()
 
-    comment = article.comments.filter_by(id=cid, author=current_identity.profile).first()
+    comment = article.comments.filter_by(id=cid, author=current_user.profile).first()
     comment.delete()
     return '', 200

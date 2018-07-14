@@ -10,6 +10,7 @@ Flask_Bcrypt
 flask_apispec
 Flask
 PyJWT
+Flask-JWT-Extended
 unicode_slugify
 psycopg2
 Flask-Migrate

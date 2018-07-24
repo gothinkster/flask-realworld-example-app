@@ -1,4 +1,4 @@
-from flask_jwt import current_identity
+from flask_jwt_extended import current_user
 
 from conduit.database import (Model, SurrogatePK, db,
                               reference_col, relationship)
@@ -44,8 +44,8 @@ class UserProfile(Model, SurrogatePK):
 
     @property
     def following(self):
-        if current_identity:
-            return current_identity.profile.is_following(self)
+        if current_user:
+            return current_user.profile.is_following(self)
         return False
 
     @property

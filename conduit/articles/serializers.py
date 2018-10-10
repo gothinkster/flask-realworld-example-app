@@ -58,7 +58,7 @@ class CommentSchema(Schema):
     comment = fields.Nested('self', exclude=('comment',), default=True, load_only=True)
 
     @pre_load
-    def make_commment(self, data):
+    def make_comment(self, data):
         return data['comment']
 
     @post_dump

@@ -62,7 +62,7 @@ def update_article(slug, **kwargs):
     article = Article.query.filter_by(slug=slug, author_id=current_user.profile.id).first()
     if not article:
         raise InvalidUsage.article_not_found()
-    article.update(updatedAt=dt.datetime.utcnow, **kwargs)
+    article.update(updatedAt=dt.datetime.utcnow(), **kwargs)
     article.save()
     return article
 

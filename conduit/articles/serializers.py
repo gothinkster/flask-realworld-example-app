@@ -81,8 +81,27 @@ class CommentsSchema(CommentSchema):
     def make_comment(self, data, many):
         return {'comments': data}
 
+class CategorySchema(Schema):
+    title = fields.Str()
+    parent_id = fields.Int()
+    createdAt = fields.DateTime()
+    updatedAt = fields.DateTime()
+
+class CategorySchemas(CategorySchema):
+
+    @post_dump
+    def dump_comment(self, data):
+        data['author'] = data['author']['profile']
+        return data
+
+    @post_dump(pass_many=True)
+    def make_comment(self, data, many):
+        return {'categories': data}
+
 
 article_schema = ArticleSchema()
 articles_schema = ArticleSchemas(many=True)
 comment_schema = CommentSchema()
 comments_schema = CommentsSchema(many=True)
+category_schema = CategorySchema()
+categories_schema = CategorySchemas(many=True)

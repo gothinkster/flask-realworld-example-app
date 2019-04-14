@@ -45,6 +45,18 @@ class Comment(Model, SurrogatePK):
     def __init__(self, article, author, body, **kwargs):
         db.Model.__init__(self, author=author, body=body, article=article, **kwargs)
 
+class Category(Model, SurrogatePK):
+    __tablename__ = 'category'
+
+    id = db.Column(db.Integer, primary_key=True)
+    title = Column(db.Text)
+    createdAt = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+    updatedAt = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
+    parent_id = db.Column(db.Integer)
+
+    def __init__(self, title, parent_id):
+        db.Model.__init__(self, title=title, parent_id=parent_id)
+
 
 class Article(SurrogatePK, Model):
     __tablename__ = 'article'

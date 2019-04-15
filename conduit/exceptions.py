@@ -11,6 +11,7 @@ UNKNOWN_ERROR = template([], code=500)
 ARTICLE_NOT_FOUND = template(['Article not found'], code=404)
 CATEGORY_NOT_FOUND = template(['Category not found'], code=404)
 COMMENT_NOT_OWNED = template(['Not your article'], code=422)
+CAN_NOT_DELETE_CATEGORY = template(['Can not delete category with children'], code=409)
 
 
 class InvalidUsage(Exception):
@@ -50,3 +51,7 @@ class InvalidUsage(Exception):
     @classmethod
     def category_not_found(cls):
         return cls(**CATEGORY_NOT_FOUND)
+
+    @classmethod
+    def can_not_delete_category(cls):
+        return cls(**CAN_NOT_DELETE_CATEGORY)

@@ -82,6 +82,7 @@ class CommentsSchema(CommentSchema):
         return {'comments': data}
 
 class CategorySchema(Schema):
+    id = fields.Int()
     title = fields.Str()
     parent_id = fields.Int()
     createdAt = fields.DateTime()

@@ -160,3 +160,16 @@ class TestArticleViews:
             'title': 'New Title',
         })
         assert resp.json['category']['title'] == "New Title"
+
+    def test_delete_category(self, testapp, user):
+        category1 = testapp.post_json(url_for('articles.make_category'),
+            {"title": "New Category1"})
+        resp = testapp.delete(url_for('articles.delete_category', id=1))
+        assert resp.status_code == 200
+
+    def test_cannot_delete_category_with_children(self, testapp, user):
+        category = testapp.post_json(url_for('articles.make_category'),
+            {"title": "New Category1", "parent_id": 1})
+        resp = testapp.delete(url_for('articles.delete_category', id=1), expect_errors=True)
+        assert resp.status_code == 409
+        assert resp.json['errors']['body'][0] == "Can not delete category with children"

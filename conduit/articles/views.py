@@ -210,3 +210,14 @@ def edit_category(id, **kwargs):
     category.update(updatedAt=dt.datetime.utcnow(), **kwargs)
     category.save()
     return category
+
+# Endpoint for deleting a category
+@blueprint.route('/api/categories/<id>', methods=('DELETE',))
+def delete_category(id):
+    category = Category.query.get(id)
+    if not category:
+        raise InvalidUsage.category_not_found()
+    if category.children:
+        raise InvalidUsage.can_not_delete_category()
+    category.delete()
+    return '', 200

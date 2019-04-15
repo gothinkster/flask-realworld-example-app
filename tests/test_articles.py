@@ -152,3 +152,11 @@ class TestArticleViews:
             {"title": "New Category1"})
         resp = testapp.get(url_for('articles.get_category', id=1))
         assert resp.json['category']['title'] == "New Category1"
+
+    def test_edit_category(self, testapp, user):
+        category1 = testapp.post_json(url_for('articles.make_category'),
+            {"title": "New Category1"})
+        resp = testapp.put(url_for('articles.edit_category', id=1), {
+            'title': 'New Title',
+        })
+        assert resp.json['category']['title'] == "New Title"

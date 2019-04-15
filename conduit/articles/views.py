@@ -167,6 +167,11 @@ def delete_comment_on_article(slug, cid):
     comment.delete()
     return '', 200
 
+##########
+# Categories
+##########
+
+# Endpoint for adding a new category
 @blueprint.route('/api/categories', methods=('POST',))
 @use_kwargs(category_schema)
 @marshal_with(category_schema)
@@ -176,6 +181,7 @@ def make_category(title, parent_id=None):
     return category
 
 
+# Endpoint for listing all categories
 @blueprint.route('/api/categories', methods=('GET',))
 @use_kwargs(category_schema)
 @marshal_with(categories_schema)
@@ -183,10 +189,24 @@ def get_categories():
     res = Category.query
     return res.all()
 
-@blueprint.route('/api/category/<id>', methods=('GET',))
+
+# Endpoint for retrieving a category by id
+@blueprint.route('/api/categories/<id>', methods=('GET',))
 @marshal_with(category_schema)
 def get_category(id):
     category = Category.query.get(id)
     if not category:
         raise InvalidUsage.category_not_found()
+    return category
+
+# Endpoint for editing a category
+@blueprint.route('/api/categories/<id>', methods=('PUT',))
+@use_kwargs(category_schema)
+@marshal_with(category_schema)
+def edit_category(id, **kwargs):
+    category = Category.query.get(id)
+    if not category:
+        raise InvalidUsage.category_not_found()
+    category.update(updatedAt=dt.datetime.utcnow(), **kwargs)
+    category.save()
     return category

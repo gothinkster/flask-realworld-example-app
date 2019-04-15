@@ -21,6 +21,7 @@ class ArticleSchema(Schema):
     tagList = fields.List(fields.Str())
     favoritesCount = fields.Int(dump_only=True)
     favorited = fields.Bool(dump_only=True)
+    category_id = fields.Int()
 
     @pre_load
     def make_article(self, data):
@@ -88,12 +89,16 @@ class CategorySchema(Schema):
     createdAt = fields.DateTime()
     updatedAt = fields.DateTime()
     children = fields.Raw()
+    articles = fields.Raw()
 
     @post_dump
     def dump_category(self, data):
         children = data.pop('children')
-        children_ids = [child.id for child in children]
-        data['children'] = children_ids
+        articles = data.pop('articles')
+        children_list = [child.id for child in children]
+        articles_list = [article.id for article in articles]
+        data['children'] = children_list
+        data['articles'] = articles_list
         return {'category': data}
 
     class Meta:

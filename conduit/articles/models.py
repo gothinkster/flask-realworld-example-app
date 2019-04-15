@@ -81,6 +81,8 @@ class Article(SurrogatePK, Model):
         'Tags', secondary=tag_assoc, backref='articles')
 
     comments = relationship('Comment', backref=db.backref('article'), lazy='dynamic')
+    category_id = reference_col('category', nullable=True)
+    category = relationship('Category', backref=db.backref('articles'))
 
     def __init__(self, author, title, body, description, slug=None, **kwargs):
         db.Model.__init__(self, author=author, title=title, description=description, body=body,

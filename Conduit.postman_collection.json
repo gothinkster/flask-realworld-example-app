@@ -1,0 +1,3630 @@
+{
+	"id": "2d8c61bf-4053-4c0f-9031-2e0361ba8789",
+	"name": "Conduit",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"09daf982-b393-420a-8ab2-b57e1e3c19c5",
+		"f7ebb958-e15e-4646-8b3a-5b90f63aaa15",
+		"ecbb49d1-2c01-4a55-84fd-272177e9f6ab",
+		"d71fc467-53f7-4081-97d6-72f3c1465b86",
+		"805d8852-cbbc-42dd-93db-74a7639da802",
+		"d410ebfd-8b3e-4049-902e-fa46e33304c6",
+		"c34c859f-0071-4fb3-aff8-8e4d87c273e1",
+		"e6cba157-f150-4dad-8988-ec476ebb0cab",
+		"84d403f8-87f7-430b-b900-26d2409589d6",
+		"f051ce76-b738-4796-b2a6-16ef8a1f7e74",
+		"c2ab9d56-6d05-4d39-80c6-66effac37944",
+		"04572a67-2c71-43ee-8307-5a4038f6c55c",
+		"8c0cdc5f-db2d-4c0f-8b03-b1af9a49e714",
+		"5cf61514-cb93-491e-9dae-fcdc7ae7f74e",
+		"59a5e3cb-2371-4ca5-ae78-b0946459cfd2",
+		"c5505856-5b86-4480-b5d7-1a076de90871",
+		"a83ee884-1fdb-454c-9ac5-a708a9d5b350",
+		"8325c15d-fada-4d4c-8c5f-c0d9acbb97dc",
+		"5c0ccab0-aa0a-426f-b595-1658c70709eb",
+		"445f95ed-32be-4d45-83e9-0e9e8859b861",
+		"462e708b-eb06-4f12-97d2-4b37a2e612a8",
+		"0c8dd221-b806-4b82-b65e-686b878245ba",
+		"d40e131d-2ee8-44ef-b41d-f3f0f44051a6",
+		"61b91171-9ffd-4865-9125-fc7657aeed78",
+		"56699234-0334-4841-8c8d-1ca80c78cce9",
+		"76b90d33-ce1a-42d0-91ce-dc960dd79a68",
+		"1c7ca54b-a894-4bcb-801b-605c851187e1",
+		"31c6b02a-b85f-417e-bdd9-c3c5e51feb55",
+		"309526d6-979f-4bd1-aa27-f265311048a1",
+		"55f75f09-741e-4bcb-95a8-14414a6ece23",
+		"011d0645-be28-47d9-8b7b-e1fc5ef2e251",
+		"8710b16d-0146-495d-a542-e12525dcd78b",
+		"94f9dd73-01aa-4a1b-b714-c44e659a330f",
+		"2334ce15-b52c-40aa-a8dd-122fa11c8f22",
+		"e3bb6681-ac0a-4204-9244-67b89711b8d7",
+		"3e18ad0c-4aaa-4756-a572-33ff13d5a2a6",
+		"5577a4bb-ecd4-432d-8f48-bc06b29a9f3c",
+		"c75c7c4c-c270-4054-b378-cceba1a2561e",
+		"e74ddb86-4d7a-444d-8410-deb903b2d2de",
+		"b0febcdf-02eb-4490-b79f-06cb767bedc6",
+		"e919a41e-545c-4dec-a8c7-5b5dcec5c69c",
+		"0844e0c5-86e1-4cfd-ba27-a30d089affcd",
+		"1c784352-1955-4029-9df7-b49d83d76f3e",
+		"d3d83654-3580-416d-a0b7-b26c07ce869e",
+		"7b2b2510-cb92-43b2-a8c7-6e0dc99f367b",
+		"eaec8fc5-e375-438f-8bc1-f9f6456c1ae5",
+		"cd7cabbc-c44c-40e4-934a-c4542c00d975",
+		"043c10f8-fe51-4e5c-a462-caa617f91458",
+		"0407bb4e-c27c-47a2-aba6-4f940b9e26d9",
+		"5a628491-9f47-468c-8895-a80c5b9a5508",
+		"477861eb-22ad-4ed7-aa0a-cf8eb13b84c7",
+		"8ee0e800-dfc2-414e-a4aa-9f2d780289c7",
+		"2f1bd6c8-fa47-4a92-98a3-c34876ff849b",
+		"186366f9-1eb6-4918-80cf-3df0895d71cb",
+		"c65a6cef-e079-49de-9d55-0684beca7402",
+		"f94cf040-9172-4d48-bd32-2ec1934a611e",
+		"e894562a-3aa2-404d-a132-86f2ed4e772a",
+		"470cd67f-c08f-4dce-b8da-4fb005ab61b4",
+		"c58422a7-7528-416d-9b52-59a1cfa98093",
+		"dd07b63a-5e16-4298-812f-9e4dbe4234e1",
+		"68dd2e8d-7c51-49e3-8f00-06b9a669e771",
+		"0aa6783f-faa7-4da7-b320-a4b6b57123ae",
+		"aab91f9d-b675-4505-b778-2c95843f0889",
+		"3b47bade-bb25-4c19-b092-e6e5cee04fab",
+		"6d4ff200-ba51-4933-a603-559e30a8d767",
+		"5b620278-ca88-49e2-9510-295d143e81fb",
+		"de266040-43fe-437a-af73-0ab7ca9f50cc",
+		"273ace80-ed52-45aa-9225-5dd4845c74dd",
+		"6d6c7b5b-2e60-49c1-8f23-a5b6e82afa1b",
+		"e26469cc-986b-4ea8-8dc0-6717e8cfe35f",
+		"032bfc23-0129-422f-8367-4391ebc06623",
+		"812a5072-9eb5-4c11-bde5-afdf949a2d17",
+		"4fbe37f4-1e55-4427-86a8-05377d6d6db3",
+		"695d9f61-0d80-40c2-a7cf-12b2f61cf692",
+		"7d67f90d-e096-43b0-acac-3ef73dfd0713",
+		"74250d87-b134-466a-8f8f-53792ae80676",
+		"89d7fbaf-275b-40c8-8730-0f9ce6cfecb1",
+		"953e875f-9eda-41cc-b2be-a10924d9cbe6",
+		"068198ce-78af-4e70-bd8d-4898a044dc0a",
+		"3a797b62-516b-4d32-b640-dd9b0fce29a1",
+		"cb8d7670-6bed-4847-a2b4-cee02ee6938c",
+		"19b4cfa8-5a05-4087-a595-59ebfb6c696d",
+		"1a86d2e1-cc7c-498a-ac48-a357f39039f7",
+		"b613d28e-f5f7-4372-9afa-c5a03ecc5b96",
+		"7e767da2-648d-487c-b4f0-c93db08a84b6",
+		"3ad9236e-547b-4c42-946d-8fac6ab49466",
+		"cbdcd16f-1160-427c-b501-c24568a01364",
+		"1f2f723b-a8e4-4d1c-8246-128b0e34fd19",
+		"1dd24543-4d5f-440c-b271-ec47e19d671d",
+		"180b1966-d590-4a97-a28d-a8e20fbddcf8",
+		"713c7d59-6e46-4f50-97b5-79a387b00aa3",
+		"c0842058-8b89-4840-9771-4a0d69438d44",
+		"845ab1e5-383d-4388-9fd9-8f541b136913",
+		"f883ba7c-a6cd-4f55-8925-27efa94852b1",
+		"1c2b1ade-5f28-402b-aa30-513f43db96cc",
+		"58356a48-329d-4dcc-bb75-e3adf0cc8d58",
+		"126d8e6a-704b-4d10-9e6a-2f2c7456a719",
+		"78a89c41-becd-4720-85d4-d37b11c2b786",
+		"e821a083-bb20-459a-9acd-af8642b8afc4",
+		"c0f05ef9-6cc4-4277-bdde-e6506ba95cc0",
+		"c6cfb4eb-dec6-4f01-8e59-2042c20e67a0",
+		"047ac9a4-1812-459f-af6f-5f14d1abbb0b",
+		"daa032dd-aee7-422a-9c62-dc34b5fd05d7",
+		"6d59fc1f-f3b7-475a-88a8-4f77b61eb011",
+		"31786b6f-ba3d-4bcb-babd-b6316980f7d4",
+		"9d377c8c-fb5e-4a63-8e67-c308ca987ab3",
+		"942ce1f8-09ef-4357-a1c1-76a9ac33b028",
+		"edd4c212-7715-47d2-92fa-bd1fbabeceac",
+		"84271ddd-cec3-4b1a-81cc-9e139c839d20",
+		"88dddb26-b7b8-4d5a-80ea-a5c6fac1ad20",
+		"3402ad32-ca6c-49fb-b0c4-ae3f39bea54c",
+		"f845f6bf-1049-4a70-9a91-82cac5095b6e",
+		"457337a6-ad71-49b0-9c71-7007a5c832b6"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "011d0645-be28-47d9-8b7b-e1fc5ef2e251",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "032bfc23-0129-422f-8367-4391ebc06623",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0407bb4e-c27c-47a2-aba6-4f940b9e26d9",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "043c10f8-fe51-4e5c-a462-caa617f91458",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "04572a67-2c71-43ee-8307-5a4038f6c55c",
+			"name": "localhost:5000/api/categories/2",
+			"url": "localhost:5000/api/categories/2",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "047ac9a4-1812-459f-af6f-5f14d1abbb0b",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "068198ce-78af-4e70-bd8d-4898a044dc0a",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0844e0c5-86e1-4cfd-ba27-a30d089affcd",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "09daf982-b393-420a-8ab2-b57e1e3c19c5",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earthlings\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0aa6783f-faa7-4da7-b320-a4b6b57123ae",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0c8dd221-b806-4b82-b65e-686b878245ba",
+			"name": "localhost:5000/api/categories/1",
+			"url": "localhost:5000/api/categories/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "126d8e6a-704b-4d10-9e6a-2f2c7456a719",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"science\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "180b1966-d590-4a97-a28d-a8e20fbddcf8",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"life\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "186366f9-1eb6-4918-80cf-3df0895d71cb",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "19b4cfa8-5a05-4087-a595-59ebfb6c696d",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1a86d2e1-cc7c-498a-ac48-a357f39039f7",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1c2b1ade-5f28-402b-aa30-513f43db96cc",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"science\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1c784352-1955-4029-9df7-b49d83d76f3e",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1c7ca54b-a894-4bcb-801b-605c851187e1",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1dd24543-4d5f-440c-b271-ec47e19d671d",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"life\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1f2f723b-a8e4-4d1c-8246-128b0e34fd19",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"life\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2334ce15-b52c-40aa-a8dd-122fa11c8f22",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "273ace80-ed52-45aa-9225-5dd4845c74dd",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2f1bd6c8-fa47-4a92-98a3-c34876ff849b",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "309526d6-979f-4bd1-aa27-f265311048a1",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "31786b6f-ba3d-4bcb-babd-b6316980f7d4",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "31c6b02a-b85f-417e-bdd9-c3c5e51feb55",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3402ad32-ca6c-49fb-b0c4-ae3f39bea54c",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"Technology\",\n\t    \"parent_id\": 1\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3a797b62-516b-4d32-b640-dd9b0fce29a1",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3ad9236e-547b-4c42-946d-8fac6ab49466",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"life\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3b47bade-bb25-4c19-b092-e6e5cee04fab",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3e18ad0c-4aaa-4756-a572-33ff13d5a2a6",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "445f95ed-32be-4d45-83e9-0e9e8859b861",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "457337a6-ad71-49b0-9c71-7007a5c832b6",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"Technology\",\n\t    \"parent_id\": 1\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "462e708b-eb06-4f12-97d2-4b37a2e612a8",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "470cd67f-c08f-4dce-b8da-4fb005ab61b4",
+			"name": "localhost:5000/api/category/19",
+			"url": "localhost:5000/api/category/19",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "477861eb-22ad-4ed7-aa0a-cf8eb13b84c7",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4fbe37f4-1e55-4427-86a8-05377d6d6db3",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5577a4bb-ecd4-432d-8f48-bc06b29a9f3c",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "55f75f09-741e-4bcb-95a8-14414a6ece23",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "56699234-0334-4841-8c8d-1ca80c78cce9",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "58356a48-329d-4dcc-bb75-e3adf0cc8d58",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"science\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "59a5e3cb-2371-4ca5-ae78-b0946459cfd2",
+			"name": "localhost:5000/api/categories/3",
+			"url": "localhost:5000/api/categories/3",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5a628491-9f47-468c-8895-a80c5b9a5508",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5b620278-ca88-49e2-9510-295d143e81fb",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5c0ccab0-aa0a-426f-b595-1658c70709eb",
+			"name": "localhost:5000/api/categories/6",
+			"url": "localhost:5000/api/categories/6",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5cf61514-cb93-491e-9dae-fcdc7ae7f74e",
+			"name": "localhost:5000/api/categories/1",
+			"url": "localhost:5000/api/categories/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "61b91171-9ffd-4865-9125-fc7657aeed78",
+			"name": "localhost:5000/api/categories/1",
+			"url": "localhost:5000/api/categories/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "68dd2e8d-7c51-49e3-8f00-06b9a669e771",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "695d9f61-0d80-40c2-a7cf-12b2f61cf692",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"AfterHe\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6d4ff200-ba51-4933-a603-559e30a8d767",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6d59fc1f-f3b7-475a-88a8-4f77b61eb011",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6d6c7b5b-2e60-49c1-8f23-a5b6e82afa1b",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "713c7d59-6e46-4f50-97b5-79a387b00aa3",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"life\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "74250d87-b134-466a-8f8f-53792ae80676",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"lifeAfterHere\",\n\t    \"parent_id\": 5\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "76b90d33-ce1a-42d0-91ce-dc960dd79a68",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "78a89c41-becd-4720-85d4-d37b11c2b786",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"science\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7b2b2510-cb92-43b2-a8c7-6e0dc99f367b",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7d67f90d-e096-43b0-acac-3ef73dfd0713",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"lifeAfterHe\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "7e767da2-648d-487c-b4f0-c93db08a84b6",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "805d8852-cbbc-42dd-93db-74a7639da802",
+			"name": "localhost:5000/api/articles",
+			"url": "localhost:5000/api/articles",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"article\": {\n\t    \"title\": \"How to train your dragon\",\n\t    \"description\": \"Ever wonder how?\",\n\t    \"body\": \"You have to believe\",\n\t    \"category_id\": 1,\n\t    \"tagList\": [\"reactjs\", \"angularjs\", \"dragons\"]\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "812a5072-9eb5-4c11-bde5-afdf949a2d17",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8325c15d-fada-4d4c-8c5f-c0d9acbb97dc",
+			"name": "localhost:5000/api/categories/6",
+			"url": "localhost:5000/api/categories/6",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "84271ddd-cec3-4b1a-81cc-9e139c839d20",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Technology\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "845ab1e5-383d-4388-9fd9-8f541b136913",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "84d403f8-87f7-430b-b900-26d2409589d6",
+			"name": "localhost:5000/api/categories/1",
+			"url": "localhost:5000/api/categories/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8710b16d-0146-495d-a542-e12525dcd78b",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "88dddb26-b7b8-4d5a-80ea-a5c6fac1ad20",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"Technology\",\n\t    \"parent_id\": 1\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "89d7fbaf-275b-40c8-8730-0f9ce6cfecb1",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"lifeAfter\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8c0cdc5f-db2d-4c0f-8b03-b1af9a49e714",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8ee0e800-dfc2-414e-a4aa-9f2d780289c7",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "942ce1f8-09ef-4357-a1c1-76a9ac33b028",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "94f9dd73-01aa-4a1b-b714-c44e659a330f",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "953e875f-9eda-41cc-b2be-a10924d9cbe6",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "9d377c8c-fb5e-4a63-8e67-c308ca987ab3",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a83ee884-1fdb-454c-9ac5-a708a9d5b350",
+			"name": "localhost:5000/api/categories/6",
+			"url": "localhost:5000/api/categories/6",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "aab91f9d-b675-4505-b778-2c95843f0889",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b0febcdf-02eb-4490-b79f-06cb767bedc6",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b613d28e-f5f7-4372-9afa-c5a03ecc5b96",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c0842058-8b89-4840-9771-4a0d69438d44",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"life\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c0f05ef9-6cc4-4277-bdde-e6506ba95cc0",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c2ab9d56-6d05-4d39-80c6-66effac37944",
+			"name": "localhost:5000/api/categories/2",
+			"url": "localhost:5000/api/categories/2",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c34c859f-0071-4fb3-aff8-8e4d87c273e1",
+			"name": "localhost:5000/api/articles",
+			"url": "localhost:5000/api/articles",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"article\": {\n\t    \"title\": \"How to train your dragon\",\n\t    \"description\": \"Ever wonder how?\",\n\t    \"body\": \"You have to believe\",\n\t    \"tagList\": [\"reactjs\", \"angularjs\", \"dragons\"]\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c5505856-5b86-4480-b5d7-1a076de90871",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c58422a7-7528-416d-9b52-59a1cfa98093",
+			"name": "localhost:5000/api/category/19",
+			"url": "localhost:5000/api/category/19",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c65a6cef-e079-49de-9d55-0684beca7402",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c6cfb4eb-dec6-4f01-8e59-2042c20e67a0",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c75c7c4c-c270-4054-b378-cceba1a2561e",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cb8d7670-6bed-4847-a2b4-cee02ee6938c",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cbdcd16f-1160-427c-b501-c24568a01364",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"life\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cd7cabbc-c44c-40e4-934a-c4542c00d975",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d3d83654-3580-416d-a0b7-b26c07ce869e",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d40e131d-2ee8-44ef-b41d-f3f0f44051a6",
+			"name": "localhost:5000/api/categories/1",
+			"url": "localhost:5000/api/categories/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d410ebfd-8b3e-4049-902e-fa46e33304c6",
+			"name": "localhost:5000/api/articles",
+			"url": "localhost:5000/api/articles",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"article\": {\n\t    \"title\": \"How to train your dragon\",\n\t    \"description\": \"Ever wonder how?\",\n\t    \"body\": \"You have to believe\",\n\t    \"category_id\": 1,\n\t    \"tagList\": [\"reactjs\", \"angularjs\", \"dragons\"]\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d71fc467-53f7-4081-97d6-72f3c1465b86",
+			"name": "localhost:5000/api/articles",
+			"url": "localhost:5000/api/articles",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"article\": {\n\t    \"title\": \"qHow to train your dragon\",\n\t    \"description\": \"qEver wonder how?\",\n\t    \"body\": \"qYou have to believe\",\n\t    \"category_id\": 1,\n\t    \"tagList\": [\"reactjs\", \"angularjs\", \"dragons\"]\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUzMTYyNTgsIm5iZiI6MTU1NTMxNjI1OCwianRpIjoiM2I5MzZhOTQtYTExNi00YjJlLTg4NGMtODdkNmMwODE3YzZiIiwiZXhwIjo4Nzk1NTMxNjI1OCwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.oalLyA0fqpJyNaikMlOgXjgnvJQnPI_vaCKVdddxzUw\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "daa032dd-aee7-422a-9c62-dc34b5fd05d7",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "dd07b63a-5e16-4298-812f-9e4dbe4234e1",
+			"name": "localhost:5000/api/category/19",
+			"url": "localhost:5000/api/category/19",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "de266040-43fe-437a-af73-0ab7ca9f50cc",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e26469cc-986b-4ea8-8dc0-6717e8cfe35f",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e3bb6681-ac0a-4204-9244-67b89711b8d7",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e6cba157-f150-4dad-8988-ec476ebb0cab",
+			"name": "localhost:5000/api/articles",
+			"url": "localhost:5000/api/articles",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"article\": {\n\t    \"title\": \"How to train your dragon\",\n\t    \"description\": \"Ever wonder how?\",\n\t    \"body\": \"You have to believe\",\n\t    \"tagList\": [\"reactjs\", \"angularjs\", \"dragons\"]\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e74ddb86-4d7a-444d-8410-deb903b2d2de",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e821a083-bb20-459a-9acd-af8642b8afc4",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e894562a-3aa2-404d-a132-86f2ed4e772a",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e919a41e-545c-4dec-a8c7-5b5dcec5c69c",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "eaec8fc5-e375-438f-8bc1-f9f6456c1ae5",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ecbb49d1-2c01-4a55-84fd-272177e9f6ab",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "edd4c212-7715-47d2-92fa-bd1fbabeceac",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"category\": {\n\t    \"title\": \"science\"\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f051ce76-b738-4796-b2a6-16ef8a1f7e74",
+			"name": "localhost:5000/api/categories/2",
+			"url": "localhost:5000/api/categories/2",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Life on Earth\",\n\t    \"parent_id\": 3\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f7ebb958-e15e-4646-8b3a-5b90f63aaa15",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earthlings\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f845f6bf-1049-4a70-9a91-82cac5095b6e",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Technology\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f883ba7c-a6cd-4f55-8925-27efa94852b1",
+			"name": "localhost:5000/api/categories",
+			"url": "localhost:5000/api/categories",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"life\"\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f94cf040-9172-4d48-bd32-2ec1934a611e",
+			"name": "localhost:5000/api/category/1",
+			"url": "localhost:5000/api/category/1",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"disabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68",
+					"description": "",
+					"enabled": true,
+					"disabled": false
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t    \"title\": \"Earth\",\n\t    \"parent_id\": 1\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Token  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTUyNzI5MTIsIm5iZiI6MTU1NTI3MjkxMiwianRpIjoiNDk1ZGRmYmUtYjQ5ZC00ODg5LTgwZTAtNzFmOThlMzcwODA2IiwiZXhwIjo4Nzk1NTI3MjkxMiwiaWRlbnRpdHkiOjEsImZyZXNoIjp0cnVlLCJ0eXBlIjoiYWNjZXNzIn0.X54321lZcocKrDNDkoKSBx11HCdA3nfrbETcS0Lvb68\n",
+			"pathVariables": {}
+		}
+	]
+}

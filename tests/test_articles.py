@@ -133,3 +133,22 @@ class TestArticleViews:
         authorp = resp.json['comment']['author']
         del authorp['following']
         assert profile_schema.dump(user).data['profile'] == authorp
+
+    def test_make_category(self, testapp, user):
+        resp = testapp.post_json(url_for('articles.make_category'),
+            {"title": "New Category"})
+        assert resp.json['category']['title'] == "New Category"
+
+    def test_list_all_categories(self, testapp, user):
+        category1 = testapp.post_json(url_for('articles.make_category'),
+            {"title": "New Category1"})
+        category2 = testapp.post_json(url_for('articles.make_category'),
+            {"title": "New Category2"})
+        resp = testapp.get(url_for('articles.get_categories'))
+        assert len(resp.json['categories']) == 2
+
+    def test_get_category_by_id(self, testapp, user):
+        category1 = testapp.post_json(url_for('articles.make_category'),
+            {"title": "New Category1"})
+        resp = testapp.get(url_for('articles.get_category', id=1))
+        assert resp.json['category']['title'] == "New Category1"

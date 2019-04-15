@@ -49,10 +49,11 @@ class Category(Model, SurrogatePK):
     __tablename__ = 'category'
 
     id = db.Column(db.Integer, primary_key=True)
-    title = Column(db.Text)
+    title = Column(db.Text, unique=True)
     createdAt = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
     updatedAt = Column(db.DateTime, nullable=False, default=dt.datetime.utcnow)
-    parent_id = db.Column(db.Integer)
+    parent_id =  reference_col('category', nullable=True)
+    children = relationship('Category', backref=db.backref('parent', remote_side=[id]))
 
     def __init__(self, title, parent_id):
         db.Model.__init__(self, title=title, parent_id=parent_id)

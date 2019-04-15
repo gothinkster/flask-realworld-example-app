@@ -9,9 +9,9 @@ from marshmallow import fields
 
 from conduit.exceptions import InvalidUsage
 from conduit.user.models import User
-from .models import Article, Tags, Comment
+from .models import Article, Tags, Comment, Category
 from .serializers import (article_schema, articles_schema, comment_schema,
-                          comments_schema)
+                          comments_schema, category_schema, categories_schema)
 
 blueprint = Blueprint('articles', __name__)
 
@@ -166,3 +166,27 @@ def delete_comment_on_article(slug, cid):
     comment = article.comments.filter_by(id=cid, author=current_user.profile).first()
     comment.delete()
     return '', 200
+
+@blueprint.route('/api/categories', methods=('POST',))
+@use_kwargs(category_schema)
+@marshal_with(category_schema)
+def make_category(title, parent_id=None):
+    category = Category(title=title, parent_id=parent_id)
+    category.save()
+    return category
+
+
+@blueprint.route('/api/categories', methods=('GET',))
+@use_kwargs(category_schema)
+@marshal_with(categories_schema)
+def get_categories():
+    res = Category.query
+    return res.all()
+
+@blueprint.route('/api/category/<id>', methods=('GET',))
+@marshal_with(category_schema)
+def get_category(id):
+    category = Category.query.get(id)
+    if not category:
+        raise InvalidUsage.category_not_found()
+    return category

@@ -6,7 +6,7 @@ import pytest
 
 from conduit.user.models import User
 from conduit.profile.models import UserProfile
-from conduit.articles.models import Article, Tags, Comment
+from conduit.articles.models import Article, Tags, Comment, Category
 
 
 from .factories import UserFactory
@@ -179,3 +179,12 @@ class TestComment:
         assert comment1.article == article
         assert comment1.author == user.profile
         assert len(article.comments.all()) == 2
+
+@pytest.mark.usefixtures('db')
+class TestCategory:
+
+    def test_add_category(self, user):
+        category = Category('title', 1)
+        category.save()
+
+        assert category.title == 'title'

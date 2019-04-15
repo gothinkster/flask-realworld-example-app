@@ -86,17 +86,28 @@ class CategorySchema(Schema):
     parent_id = fields.Int()
     createdAt = fields.DateTime()
     updatedAt = fields.DateTime()
+    children = fields.Raw()
+
+    @post_dump
+    def dump_category(self, data):
+        children = data.pop('children')
+        children_ids = [child.id for child in children]
+        data['children'] = children_ids
+        return {'category': data}
+
+    class Meta:
+        strict = True
+
 
 class CategorySchemas(CategorySchema):
 
     @post_dump
     def dump_comment(self, data):
-        data['author'] = data['author']['profile']
         return data
 
     @post_dump(pass_many=True)
     def make_comment(self, data, many):
-        return {'categories': data}
+        return {'categories': data, 'categoriesCount': len(data)}
 
 
 article_schema = ArticleSchema()

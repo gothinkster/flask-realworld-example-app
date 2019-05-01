@@ -15,5 +15,8 @@ db.create_all()
 migrate = Migrate(app, db)
 
 
-if __name__ == "__main__":
-    app.run()
+<<<<<<< HEAD
+=======
+app = create_app(CONFIG)
+
+>>>>>>> 609330574307173c44b32a96fb032c867b4e338f

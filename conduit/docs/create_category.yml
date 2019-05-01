@@ -1,0 +1,45 @@
+conduit/docs/create_category.yml
+
+create category
+---
+paths:
+  /categories:
+      post:
+        description: creates new category entity in the database table categories
+        parameters:
+          - in: header
+            name: Authorization
+            description: authorization header
+            required: true
+            schema:
+              type: string
+              id: Token
+        requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                type: object
+                parameters:
+                  catname:
+                    type: string
+                    example: Music
+                 
+      responses:
+        201:
+        description: Category successfully created.
+        400:
+        description: category was not in right format
+      security:
+        - JWT:
+            description: Pass in jwt token. i.e Token <jwt>
+            -in: header
+             name: Authorization
+             type: apiKey
+             scheme: bearer 
+             bearerFormat: JWT
+      tags:
+        - Category
+   
+
+

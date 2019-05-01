@@ -1,17 +1,17 @@
 # coding: utf-8
 
 import datetime as dt
-
-from flask import Blueprint, jsonify
+from pprint import pprint
+from flask import Blueprint, jsonify, request
 from flask_apispec import marshal_with, use_kwargs
 from flask_jwt_extended import current_user, jwt_required, jwt_optional
 from marshmallow import fields
-
+from conduit.extensions import db
 from conduit.exceptions import InvalidUsage
 from conduit.user.models import User
-from .models import Article, Tags, Comment
+from .models import Article, Tags, Comment, Category
 from .serializers import (article_schema, articles_schema, comment_schema,
-                          comments_schema)
+                          comments_schema, categories_schema, category_schema)
 
 blueprint = Blueprint('articles', __name__)
 
@@ -40,9 +40,21 @@ def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
 @jwt_required
 @use_kwargs(article_schema)
 @marshal_with(article_schema)
-def make_article(body, title, description, tagList=None):
+def make_article(body, title, description, tagList=None, categories=None):
     article = Article(title=title, description=description, body=body,
                       author=current_user.profile)
+    if categories is not None:
+        for category in categories:
+            mcategory = Category.query.filter_by(catname=category).first()
+            if not mcategory:
+                mcategory = Category(catname=category) 
+                mcategory.save() 
+                article.add_category(mcategory) 
+    else:
+        mcategory = Category(catname='uncategorized') 
+        mcategory.save() 
+        article.add_category(mcategory) 
+                      
     if tagList is not None:
         for tag in tagList:
             mtag = Tags.query.filter_by(tagname=tag).first()
@@ -166,3 +178,62 @@ def delete_comment_on_article(slug, cid):
     comment = article.comments.filter_by(id=cid, author=current_user.profile).first()
     comment.delete()
     return '', 200
+   
+##########
+#category
+#########
+
+@blueprint.route('/api/categories', methods=['POST'])
+@jwt_required
+def create_category():
+    json_data = request.get_json() 
+    if not request.json or not 'category' in json_data:
+        return jsonify({'message': 'field is empty, please cross check', 'status': 404}), 404
+    data, errors = category_schema.load(json_data)
+    category = Category.query.filter_by(catname=data['catname']).first()
+    if not category:
+        category_name = Category(catname=data['catname'])
+        db.session.add(category_name)
+        db.session.commit()
+        data, errors = category_schema.dump(category_name)
+        print(data)
+        return jsonify(data) ,201
+    return jsonify({'message': 'category already exixts'}), 404
+
+@blueprint.route('/api/categories/<int:id>', methods=['DELETE'])
+@jwt_required
+def remove_category(id):
+    category = Category.query.filter_by(id=id).first()
+    if not category:
+        return jsonify({'message': 'not found', 'status': 404}), 404 
+    db.session.delete(category)
+    return jsonify({'category':{'id': id , 'message': 'category has been deleted'}, 'status': 200}), 200
+
+
+@blueprint.route('/api/categories/<int:id>/category', methods=['PATCH'])
+@jwt_required
+def edit_category(id):
+        json_data = request.get_json()
+        data, errors = category_schema.load(json_data)
+        category = Category.query.filter_by(id=id).first()
+        if not category:
+             return jsonify({'message': 'not found', 'status': 404}) ,404
+        else:
+            category.update(catname=data['catname'])
+            db.session.add(category)
+            db.session.commit()
+            return jsonify({'category': {'id':id, 'message': \
+            'has been updated'}, 'status': 200}), 200
+
+
+@blueprint.route('/api/categories', methods=['GET'])
+@jwt_required
+def fetch_all_categories():
+    categories = Category.query.all()
+    if not categories :
+        return jsonify({'message': ' not found', 'status' : 404}) ,404
+    data, errors = categories_schema.dump(categories)
+    return jsonify(data), 200
+
+
+

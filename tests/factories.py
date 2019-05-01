@@ -28,3 +28,7 @@ class UserFactory(BaseFactory):
         """Factory configuration."""
 
         model = User
+
+
+
+

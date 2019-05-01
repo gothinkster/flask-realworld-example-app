@@ -1,0 +1,45 @@
+conduit/docs/delete_category.yml
+
+delete category
+---
+paths:
+  /categories/{id}:
+      delete:
+        description: deletes an existing category entity in the database
+        parameters:
+          - in: header
+            name: Authorization
+            description: authorization header
+            required: true
+            schema:
+              type: string
+              id: Token        
+      responses:
+        200:
+        description: Category successfully deleted.
+        content:
+            application/json:
+              schema:
+                type: object
+                parameters:
+                  id:
+                    type: integer
+                    example: 2
+                  message:
+                    type: string
+                    example: category has been deleted
+        404:
+        description: category was not found
+      security:
+        - JWT:
+            description: Pass in jwt token. i.e Token <jwt>
+            -in: header
+             name: Authorization
+             type: apiKey
+             scheme: bearer 
+             bearerFormat: JWT
+      tags:
+        - Category
+   
+
+

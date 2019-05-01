@@ -179,3 +179,5 @@ class TestComment:
         assert comment1.article == article
         assert comment1.author == user.profile
         assert len(article.comments.all()) == 2
+
+

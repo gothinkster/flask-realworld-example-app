@@ -16,7 +16,7 @@ class UserSchema(Schema):
     user = fields.Nested('self', exclude=('user',), default=True, load_only=True)
 
     @pre_load
-    def make_user(self, data):
+    def make_user(self, data, **kwargs):
         data = data['user']
         # some of the frontends send this like an empty string and some send
         # null
@@ -27,7 +27,7 @@ class UserSchema(Schema):
         return data
 
     @post_dump
-    def dump_user(self, data):
+    def dump_user(self, data, **kwargs):
         return {'user': data}
 
     class Meta:

@@ -23,11 +23,11 @@ class ArticleSchema(Schema):
     favorited = fields.Bool(dump_only=True)
 
     @pre_load
-    def make_article(self, data):
+    def make_article(self, data, **kwargs):
         return data['article']
 
     @post_dump
-    def dump_article(self, data):
+    def dump_article(self, data, **kwargs):
         data['author'] = data['author']['profile']
         return {'article': data}
 
@@ -38,12 +38,12 @@ class ArticleSchema(Schema):
 class ArticleSchemas(ArticleSchema):
 
     @post_dump
-    def dump_article(self, data):
+    def dump_article(self, data, **kwargs):
         data['author'] = data['author']['profile']
         return data
 
     @post_dump(pass_many=True)
-    def dump_articles(self, data, many):
+    def dump_articles(self, data, many, **kwargs):
         return {'articles': data, 'articlesCount': len(data)}
 
 
@@ -58,11 +58,11 @@ class CommentSchema(Schema):
     comment = fields.Nested('self', exclude=('comment',), default=True, load_only=True)
 
     @pre_load
-    def make_comment(self, data):
+    def make_comment(self, data, **kwargs):
         return data['comment']
 
     @post_dump
-    def dump_comment(self, data):
+    def dump_comment(self, data, **kwargs):
         data['author'] = data['author']['profile']
         return {'comment': data}
 
@@ -73,12 +73,12 @@ class CommentSchema(Schema):
 class CommentsSchema(CommentSchema):
 
     @post_dump
-    def dump_comment(self, data):
+    def dump_comment(self, data, **kwargs):
         data['author'] = data['author']['profile']
         return data
 
     @post_dump(pass_many=True)
-    def make_comment(self, data, many):
+    def make_comment(self, data, many, **kwargs):
         return {'comments': data}
 
 

@@ -55,3 +55,10 @@ dev.db
 
 # Vagrant machines
 .vagrant/**
+
+*.sqlite
+
+# Virtual environment
+venv/
+__pycache__/
+vscode/

@@ -17,6 +17,41 @@ tag_assoc = db.Table("tag_assoc",
                      db.Column("tag", db.Integer, db.ForeignKey("tags.id")),
                      db.Column("article", db.Integer, db.ForeignKey("article.id")))
 
+category_assoc = db.Table("category_assoc",
+                     db.Column("category", db.Integer, db.ForeignKey("categories.id")),
+                     db.Column("article", db.Integer, db.ForeignKey("article.id")))
+
+
+category_tree =db.Table("category_tree",
+                    db.Column("parent_id", db.Integer, db.ForeignKey("categories.id")),
+                    db.Column("children_id", db.Integer, db.ForeignKey("categories.id")))
+
+
+class Category(Model):
+    __tablename__ = 'categories'
+
+    id = db.Column(db.Integer, primary_key=True)
+    catname = db.Column(db.String(100))
+
+    parents = db.relationship('Category',
+    secondary = category_tree,
+    primaryjoin = (category_tree.c.parent_id==id),
+    secondaryjoin = (category_tree.c.children_id==id),
+    backref= db.backref('children_categories', lazy='dynamic'), lazy='dynamic'
+    )
+
+    def __init__(self, catname):
+        db.Model.__init__(self, catname=catname)
+
+    def __repr__(self):
+        return self.catname
+
+    def add_children(self, children):
+        if children not in self.parents:
+            self.parents.append(children)
+            return True
+        return False
+
 
 class Tags(Model):
     __tablename__ = 'tags'
@@ -64,6 +99,12 @@ class Article(SurrogatePK, Model):
         backref='favorites',
         lazy='dynamic')
 
+    categories = relationship(
+        'Category',
+        secondary=category_assoc,
+        backref='articles',
+        lazy='dynamic')
+
     tagList = relationship(
         'Tags', secondary=tag_assoc, backref='articles')
 
@@ -97,6 +138,18 @@ class Article(SurrogatePK, Model):
     def remove_tag(self, tag):
         if tag in self.tagList:
             self.tagList.remove(tag)
+            return True
+        return False
+
+    def add_category(self, category):
+        if category not in self.categories:
+            self.categories.append(category)
+            return True
+        return False
+
+    def remove_tag(self, category):
+        if category in self.categories:
+            self.categories.remove(category)
             return True
         return False
 

@@ -1,0 +1,54 @@
+conduit/docs/fetch_categories.yml
+
+Pull categories
+---
+paths:
+  /categories:
+      get:
+        description: gets a list of categories from the database table categories
+        parameters:
+          - in: header
+            name: Authorization
+            description: authorization header
+            required: true
+            schema:
+              type: string
+              id: Token
+        
+      responses:
+        200:
+        description:  successful pull of categories from the database.
+        content:
+          application/json:
+              schema:
+                type: list
+                parameters:
+                  id:
+                    type: integer
+                    example: 2
+                  catname:
+                    type: string
+                    example: Music
+        404:
+        description: categories table empty
+        content:
+          application/json:
+              schema:
+                type: object
+                parameters:
+                  message:
+                    type: string
+                    example: not found
+      security:
+        - JWT:
+            description: Pass in jwt token. i.e Token <jwt>
+            -in: header
+             name: Authorization
+             type: apiKey
+             scheme: bearer 
+             bearerFormat: JWT
+      tags:
+        - Category
+   
+
+

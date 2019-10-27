@@ -15,7 +15,7 @@ class UserProfile(Model, SurrogatePK):
     # id is needed for primary join, it does work with SurrogatePK class
     id = db.Column(db.Integer, primary_key=True)
 
-    user_id = reference_col('users', nullable=False)
+    user_id = reference_col('users', nullable=False, unique=True)
     user = relationship('User', backref=db.backref('profile', uselist=False))
     follows = relationship('UserProfile',
                            secondary=followers_assoc,

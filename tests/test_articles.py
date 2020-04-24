@@ -134,3 +134,36 @@ class TestArticleViews:
         del authorp['following']
         # assert profile_schema.dump(user).data['profile'] == authorp
         assert profile_schema.dump(user)['profile'] == authorp
+
+    def test_sources(self, testapp, user):
+        user = user.get()
+        resp = testapp.post_json(url_for('user.login_user'), {'user': {
+            'email': user.email,
+            'password': 'myprecious'
+        }})
+
+        token = str(resp.json['user']['token'])
+
+        resp = testapp.post_json(url_for('articles.make_article'), {
+            "article": {
+                "title": "How to train your dragon",
+                "description": "Ever wonder how?",
+                "body": "You have to believe",
+                "tagList": ["reactjs", "angularjs", "dragons"]
+            }
+        }, headers={
+            'Authorization': 'Token {}'.format(token)
+        })
+        slug = resp.json['article']['slug']
+
+        # make a source
+        resp = testapp.post_json(url_for('articles.make_source_on_article', slug=slug), {
+            "source": {
+                "url": "http://facebook.com",
+                "title": "Reliable source"
+            }
+        }, headers={
+            'Authorization': 'Token {}'.format(token)
+        })
+
+        assert resp.json["source"]

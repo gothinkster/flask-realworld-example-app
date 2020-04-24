@@ -46,6 +46,15 @@ class Comment(Model, SurrogatePK):
         db.Model.__init__(self, author=author, body=body, article=article, **kwargs)
 
 
+class Source(Model, SurrogatePK):
+    __tablename__ = 'source'
+    id = db.Column(db.Integer, primary_key=True)
+    title = Column(db.String(500), nullable=False)
+    url = Column(db.String(500), nullable=False)
+
+    article_id = reference_col('article', nullable=False)
+
+
 class Article(SurrogatePK, Model):
     __tablename__ = 'article'
 
@@ -68,6 +77,7 @@ class Article(SurrogatePK, Model):
         'Tags', secondary=tag_assoc, backref='articles')
 
     comments = relationship('Comment', backref=db.backref('article'), lazy='dynamic')
+    sources = relationship('Source', backref=db.backref('article'), lazy='dynamic')
 
     def __init__(self, author, title, body, description, slug=None, **kwargs):
         db.Model.__init__(self, author=author, title=title, description=description, body=body,

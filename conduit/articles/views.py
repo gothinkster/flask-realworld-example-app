@@ -9,9 +9,9 @@ from marshmallow import fields
 
 from conduit.exceptions import InvalidUsage
 from conduit.user.models import User
-from .models import Article, Tags, Comment
+from .models import Article, Tags, Comment, Source
 from .serializers import (article_schema, articles_schema, comment_schema,
-                          comments_schema)
+                          comments_schema, source_schema, sources_schema)
 
 blueprint = Blueprint('articles', __name__)
 
@@ -127,6 +127,32 @@ def articles_feed(limit=20, offset=0):
 @blueprint.route('/api/tags', methods=('GET',))
 def get_tags():
     return jsonify({'tags': [tag.tagname for tag in Tags.query.all()]})
+
+##########
+# Sources
+##########
+
+
+@blueprint.route('/api/articles/<slug>/sources', methods=('GET',))
+@marshal_with(sources_schema)
+def get_sources(slug):
+    article = Article.query.filter_by(slug=slug).first()
+    if not article:
+        raise InvalidUsage.article_not_found()
+    return article.sources
+
+
+@blueprint.route('/api/articles/<slug>/sources', methods=('POST',))
+@jwt_required
+@use_kwargs(source_schema)
+@marshal_with(source_schema)
+def make_source_on_article(slug, body, **kwargs):
+    article = Article.query.filter_by(slug=slug).first()
+    if not article:
+        raise InvalidUsage.article_not_found()
+    source = Source(article=article, **kwargs)
+    source.save()
+    return source
 
 
 ##########

@@ -82,7 +82,32 @@ class CommentsSchema(CommentSchema):
         return {'comments': data}
 
 
+class SourceSchema(Schema):
+    id = fields.Int()
+    title = fields.Str()
+    url = fields.Str()
+
+    @pre_load
+    def make_source(self, data, **kwargs):
+        return data['source']
+
+    @post_dump
+    def dump_source(self, data, **kwargs):
+        return {'source': data}
+
+    class Meta:
+        strict = True
+
+
+class SourcesSchema(SourceSchema):
+    @post_dump(pass_many=True)
+    def make_source(self, data, many, **kwargs):
+        return {'sources': data}
+
+
 article_schema = ArticleSchema()
 articles_schema = ArticleSchemas(many=True)
 comment_schema = CommentSchema()
 comments_schema = CommentsSchema(many=True)
+source_schema = SourceSchema()
+sources_schema = SourcesSchema(many=True)

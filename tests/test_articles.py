@@ -25,7 +25,7 @@ class TestArticleViews:
                 'Authorization': 'Token {}'.format(token)
             })
 
-        resp = testapp.get(url_for('articles.get_articles', author=user.username))
+        resp = testapp.get(url_for('articles.get_articles', author=user.username, hot=1))
         assert len(resp.json['articles']) == 2
 
     def test_favorite_an_article(self, testapp, user):

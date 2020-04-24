@@ -9,7 +9,7 @@ from marshmallow import fields
 
 from conduit.exceptions import InvalidUsage
 from conduit.user.models import User
-from .models import Article, Tags, Comment
+from .models import Article, Tags, Comment, favoriter_assoc 
 from .serializers import (article_schema, articles_schema, comment_schema,
                           comments_schema)
 
@@ -22,10 +22,14 @@ blueprint = Blueprint('articles', __name__)
 
 @blueprint.route('/api/articles', methods=('GET',))
 @jwt_optional
-@use_kwargs({'tag': fields.Str(), 'author': fields.Str(),
-             'favorited': fields.Str(), 'limit': fields.Int(), 'offset': fields.Int()})
+@use_kwargs({'tag': fields.Str(),
+             'author': fields.Str(),
+             'favorited': fields.Str(),
+             'hot': fields.Bool(),
+             'limit': fields.Int(),
+             'offset': fields.Int()})
 @marshal_with(articles_schema)
-def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
+def get_articles(tag=None, author=None, favorited=None, hot=False, limit=20, offset=0):
     res = Article.query
     if tag:
         res = res.filter(Article.tagList.any(Tags.tagname == tag))
@@ -33,6 +37,13 @@ def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
         res = res.join(Article.author).join(User).filter(User.username == author)
     if favorited:
         res = res.join(Article.favoriters).filter(User.username == favorited)
+    if hot:
+        assert not favorited
+        import sqlalchemy as sa
+
+        res = res.filter(Article.createdAt > (dt.datetime.now() - dt.timedelta(days=7)))
+        subselect = sa.select([favoriter_assoc.c.favorited_article, sa.func.count().label("cnt")])
+        res = res.join(subselect).filter(subselect.c.favorited_article == Article.id).filter(subselect.c.cnt > 100)
     return res.offset(offset).limit(limit).all()
 
 

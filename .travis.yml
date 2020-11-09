@@ -11,4 +11,6 @@ before_script:
   - export FLASK_APP="$TRAVIS_BUILD_DIR/autoapp.py"
   - export FLASK_DEBUG=1
 
-script: flask test
+script:
+  - pycodestyle --max-line-length=160 .
+  - flask test

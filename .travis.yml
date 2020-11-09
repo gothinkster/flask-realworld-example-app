@@ -6,6 +6,7 @@ python:
   - 3.4
   - 3.5
   - 3.6
+  - 3.7
 install: pip install -r requirements/dev.txt
 before_script:
   - export FLASK_APP="$TRAVIS_BUILD_DIR/autoapp.py"
@@ -13,4 +14,3 @@ before_script:
 
 script:
   - pycodestyle --max-line-length=160 .
-  - flask test

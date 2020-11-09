@@ -7,3 +7,4 @@ WebTest
 factory-boy
 # For python 3
 Faker
+pycodestyle

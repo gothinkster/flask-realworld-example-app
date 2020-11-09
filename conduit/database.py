@@ -10,6 +10,7 @@ Column = db.Column
 relationship = relationship
 Model = db.Model
 
+
 # From Mike Bayer's "Building the app" talk
 # https://speakerdeck.com/zzzeek/building-the-app
 class SurrogatePK(object):

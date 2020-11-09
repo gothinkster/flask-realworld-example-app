@@ -7,4 +7,12 @@ from conduit.settings import DevConfig, ProdConfig
 
 CONFIG = DevConfig if get_debug_flag() else ProdConfig
 
-app = create_app(CONFIG)
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return 'Hello World! V1.0'
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run()

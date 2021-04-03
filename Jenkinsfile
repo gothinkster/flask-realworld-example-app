@@ -14,6 +14,7 @@ pipeline {
         stage('test'){
             steps {
                 sh flask test
+
             }
         }
         stage('Git merge'){

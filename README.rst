@@ -33,6 +33,8 @@ database tables and perform the initial migration ::
 
     flask db init
     flask db migrate
+    
+    edited
     flask db upgrade
 
 To run the web application use::

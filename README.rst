@@ -34,7 +34,7 @@ database tables and perform the initial migration ::
     flask db init
     flask db migrate
     
-    edited
+    edited to test multibranch
     flask db upgrade
 
 To run the web application use::

@@ -2,7 +2,8 @@
 
 from flask import Blueprint
 from flask_apispec import marshal_with
-from flask_jwt_extended import current_user, jwt_required, jwt_optional
+#from flask_jwt_extended import current_user, jwt_required, jwt_optional
+from flask_jwt_extended import current_user, jwt_required
 
 from conduit.exceptions import InvalidUsage
 from conduit.user.models import User
@@ -12,9 +13,9 @@ blueprint = Blueprint('profiles', __name__)
 
 
 @blueprint.route('/api/profiles/<username>', methods=('GET',))
-@jwt_optional
+#@jwt_optional
 @marshal_with(profile_schema)
-def get_profile(username):
+def get_profile_new(username):
     user = User.query.filter_by(username=username).first()
     if not user:
         raise InvalidUsage.user_not_found()
@@ -22,9 +23,9 @@ def get_profile(username):
 
 
 @blueprint.route('/api/profiles/<username>/follow', methods=('POST',))
-@jwt_required
+#@jwt_required
 @marshal_with(profile_schema)
-def follow_user(username):
+def follow_user_new(username):
     user = User.query.filter_by(username=username).first()
     if not user:
         raise InvalidUsage.user_not_found()
@@ -34,9 +35,9 @@ def follow_user(username):
 
 
 @blueprint.route('/api/profiles/<username>/follow', methods=('DELETE',))
-@jwt_required
+#@jwt_required
 @marshal_with(profile_schema)
-def unfollow_user(username):
+def unfollow_user_news(username):
     user = User.query.filter_by(username=username).first()
     if not user:
         raise InvalidUsage.user_not_found()

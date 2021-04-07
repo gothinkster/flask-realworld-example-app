@@ -37,7 +37,7 @@ def follow_user(username):
 @blueprint.route('/api/profiles/<username>/follow', methods=('DELETE',))
 #@jwt_required
 @marshal_with(profile_schema)
-def unfollow_users(username):
+def unfollow_user(username):
     user = User.query.filter_by(username=username).first()
     if not user:
         raise InvalidUsage.user_not_found()

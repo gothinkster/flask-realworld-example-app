@@ -15,7 +15,7 @@ blueprint = Blueprint('profiles', __name__)
 @blueprint.route('/api/profiles/<username>', methods=('GET',))
 #@jwt_optional
 @marshal_with(profile_schema)
-def get_profile_new(username):
+def get_profile(username):
     user = User.query.filter_by(username=username).first()
     if not user:
         raise InvalidUsage.user_not_found()
@@ -25,7 +25,7 @@ def get_profile_new(username):
 @blueprint.route('/api/profiles/<username>/follow', methods=('POST',))
 #@jwt_required
 @marshal_with(profile_schema)
-def follow_user_new(username):
+def follow_user(username):
     user = User.query.filter_by(username=username).first()
     if not user:
         raise InvalidUsage.user_not_found()
@@ -37,7 +37,7 @@ def follow_user_new(username):
 @blueprint.route('/api/profiles/<username>/follow', methods=('DELETE',))
 #@jwt_required
 @marshal_with(profile_schema)
-def unfollow_user_news(username):
+def unfollow_users(username):
     user = User.query.filter_by(username=username).first()
     if not user:
         raise InvalidUsage.user_not_found()

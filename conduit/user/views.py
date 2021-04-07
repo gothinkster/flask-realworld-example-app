@@ -32,7 +32,7 @@ def register_user(username, password, email, **kwargs):
 #@jwt_optional
 @use_kwargs(user_schema)
 @marshal_with(user_schema)
-def login_user_new(email, password, **kwargs):
+def login_user(email, password, **kwargs):
     user = User.query.filter_by(email=email).first()
     if user is not None and user.check_password(password):
         user.token = create_access_token(identity=user, fresh=True)
@@ -44,7 +44,7 @@ def login_user_new(email, password, **kwargs):
 @blueprint.route('/api/user', methods=('GET',))
 #@jwt_required
 @marshal_with(user_schema)
-def get_user_new():
+def get_user():
     user = current_user
     # Not sure about this
     user.token = request.headers.environ['HTTP_AUTHORIZATION'].split('Token ')[1]
@@ -55,7 +55,7 @@ def get_user_new():
 #@jwt_required
 @use_kwargs(user_schema)
 @marshal_with(user_schema)
-def update_user_new(**kwargs):
+def update_user(**kwargs):
     user = current_user
     # take in consideration the password
     password = kwargs.pop('password', None)

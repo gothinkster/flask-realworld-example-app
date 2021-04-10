@@ -33,6 +33,8 @@ database tables and perform the initial migration ::
 
     flask db init
     flask db migrate
+    
+    edited to test multibranch
     flask db upgrade
 
 To run the web application use::
@@ -81,3 +83,6 @@ This will generate a new migration script. Then run ::
 To apply the migration.
 
 For a full migration command reference, run ``flask db --help``.
+
+
+still editing

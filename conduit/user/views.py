@@ -2,7 +2,8 @@
 """User views."""
 from flask import Blueprint, request
 from flask_apispec import use_kwargs, marshal_with
-from flask_jwt_extended import jwt_required, jwt_optional, create_access_token, current_user
+#from flask_jwt_extended import jwt_required, jwt_optional, create_access_token, current_user
+from flask_jwt_extended import jwt_required, create_access_token, current_user
 from sqlalchemy.exc import IntegrityError
 
 from conduit.database import db
@@ -28,7 +29,7 @@ def register_user(username, password, email, **kwargs):
 
 
 @blueprint.route('/api/users/login', methods=('POST',))
-@jwt_optional
+#@jwt_optional
 @use_kwargs(user_schema)
 @marshal_with(user_schema)
 def login_user(email, password, **kwargs):
@@ -41,7 +42,7 @@ def login_user(email, password, **kwargs):
 
 
 @blueprint.route('/api/user', methods=('GET',))
-@jwt_required
+#@jwt_required
 @marshal_with(user_schema)
 def get_user():
     user = current_user
@@ -51,7 +52,7 @@ def get_user():
 
 
 @blueprint.route('/api/user', methods=('PUT',))
-@jwt_required
+#@jwt_required
 @use_kwargs(user_schema)
 @marshal_with(user_schema)
 def update_user(**kwargs):

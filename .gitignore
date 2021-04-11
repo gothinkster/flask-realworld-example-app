@@ -16,6 +16,8 @@ develop-eggs
 .installed.cfg
 lib
 lib64
+migrations
+flask-app
 
 # Installer logs
 pip-log.txt

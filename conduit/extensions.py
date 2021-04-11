@@ -46,5 +46,5 @@ cors = CORS()
 from conduit.utils import jwt_identity, identity_loader  # noqa
 
 jwt = JWTManager()
-jwt.user_loader_callback_loader(jwt_identity)
-jwt.user_identity_loader(identity_loader)
+#jwt.user_loader_callback_loader(jwt_identity)
+#jwt.user_identity_loader(identity_loader)

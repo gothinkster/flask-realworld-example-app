@@ -27,6 +27,9 @@ blueprint = Blueprint('articles', __name__)
 @marshal_with(articles_schema)
 def get_articles(tag=None, author=None, favorited=None, limit=20, offset=0):
     res = Article.query
+
+    AWS_SECRET = "blahblahblah"
+
     if tag:
         res = res.filter(Article.tagList.any(Tags.tagname == tag))
     if author:

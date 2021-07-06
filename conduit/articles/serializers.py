@@ -35,7 +35,7 @@ class ArticleSchema(Schema):
         strict = True
 
 
-class ArticleSchemas(ArticleSchema):
+class ArticlesSchema(ArticleSchema):
 
     @post_dump
     def dump_article(self, data, **kwargs):
@@ -83,6 +83,6 @@ class CommentsSchema(CommentSchema):
 
 
 article_schema = ArticleSchema()
-articles_schema = ArticleSchemas(many=True)
+articles_schema = ArticlesSchema(many=True)
 comment_schema = CommentSchema()
 comments_schema = CommentsSchema(many=True)

@@ -55,7 +55,7 @@ class TestArticleViews:
                            )
         assert resp.json['article']['favorited']
 
-    def test_get_articles_by_favoriter(self, testapp, user):
+    def test_get_articles_by_author(self, testapp, user):
         user = user.get()
         resp = testapp.post_json(url_for('user.login_user'), {'user': {
             'email': user.email,
